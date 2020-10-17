@@ -1,0 +1,16 @@
+body {
+    background-color: #191919;
+    margin: 0;
+    display: block;
+    color: #f2f2f2;
+    font-family: Gill Sans Nova, Roboto, sans-serif;
+}
+
+nav {
+    background-color: #111111;
+}
+
+#burgerContainer {
+    display: none;
+    background-color: #111111;
+}
