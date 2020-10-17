@@ -5,7 +5,6 @@ window.addEventListener('load', () => {
     let burger = document.getElementById('burger');
     let body = document.body;
 
-
     burger.addEventListener('click', () => {
         nav.setAttribute('id', 'navVisible');
         body.style.overflow = 'hidden';
@@ -15,6 +14,6 @@ window.addEventListener('load', () => {
         body.style.overflow = 'inherit';
         nav.removeAttribute('id');
         nav.setAttribute('id', 'nav');
-    })
+    });
 
 });

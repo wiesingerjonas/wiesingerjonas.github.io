@@ -1,3 +1,4 @@
+/*region nav*/
 nav {
     height: 100vh;
     line-height: 100vh;
@@ -32,4 +33,22 @@ nav #navContent p {
     font-size: 6vh;
     margin: 0;
     padding: 0;
+}
+/*endregion*/
+
+#home {
+    height: 90vh;
+    width: 100vw;
+    display: block;
+}
+
+.subDiv {
+    min-height: 90vh;
+    width: 100vw;
+    display: none;
+    padding: 0 5vw;
+}
+
+.subDiv h1 {
+    font-size: 4vh;
 }
