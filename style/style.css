@@ -14,3 +14,10 @@ nav {
     display: none;
     background-color: #111111;
 }
+
+.subDiv {
+    display: none;
+}
+#home {
+    display: block;
+}

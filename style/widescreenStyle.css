@@ -1,0 +1,22 @@
+nav #navClose {
+    display: none;
+}
+nav {
+    width: 100vw;
+}
+nav #navContent {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2vw;
+}
+nav #navContent .navLinks {
+    right: 0;
+    padding: 2vh 1vw;
+    margin: 0;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+nav #navContent .navLinks:hover{
+    color: #e9931a;
+}

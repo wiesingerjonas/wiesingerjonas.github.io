@@ -36,16 +36,9 @@ nav #navContent p {
 }
 /*endregion*/
 
-#home {
-    height: 90vh;
-    width: 100vw;
-    display: block;
-}
-
 .subDiv {
     min-height: 90vh;
     width: 100vw;
-    display: none;
     padding: 0 5vw;
 }
 
