@@ -88,7 +88,7 @@ window.addEventListener('load', () => {
 
     let filmsJson = JSON.parse(films);
 
-    for (let i = 0; i < filmsJson.films.length; i++) {
+    for (let i = filmsJson.films.length-1; i >= 0; i--) {
 
         let img = document.createElement('img');
 

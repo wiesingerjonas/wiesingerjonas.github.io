@@ -28,31 +28,31 @@ nav #navContent .navLinks:hover{
 #films h1 {
     margin-left: 10.5vw;
 }
-@media only screen and (max-aspect-ratio: 4/3) {
-    #films #imageContainer {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 10vw;
-    }
+#films #imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10vw;
+}
 
+#films img {
+    margin: 2vh 0.5vw;
+    padding: 0;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    cursor: pointer;
+}
+#films img:hover {
+    filter: grayscale(0);
+}
+@media only screen and (max-aspect-ratio: 4/3) {
     #films img{
         width: 19vw;
-        margin: 2vh 0.5vw;
-        padding: 0;
     }
 }
 
 @media only screen and (min-aspect-ratio: 4/3) {
-    #films #imageContainer {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 10vw;
-    }
-
     #films img{
         width: 15vw;
-        margin: 2vh 0.5vw;
-        padding: 0;
     }
 }
 
