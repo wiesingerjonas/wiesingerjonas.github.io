@@ -74,6 +74,14 @@ window.addEventListener('load', () => {
             filmDetail.appendChild(title);
             //endregion
 
+            //region subtitle
+            if(filmsJson.films[i].subtitle !== 'null') {
+                let subtitle = document.createElement('h2');
+                subtitle.innerHTML = filmsJson.subfilms[i].title;
+                filmDetail.appendChild(subtitle);
+            }
+            //endregion
+
         });
 
         function deleteChildren(parent) {
