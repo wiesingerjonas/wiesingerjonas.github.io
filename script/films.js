@@ -48,9 +48,19 @@ window.addEventListener('load', () => {
         '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
         'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden."},' +
 
+        '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
+        '"iframeLink":"https://www.youtube.com/embed/0Vi-V9bhUTI", ' +
+        '"secondLink":"null", "text":"Das zweite Filmprojekt dieser Reihe war eine Mockumentary, ein fiktionaler Dokumentarfilm, ' +
+        'welcher Unwahrheiten für wahr verkauft. Wir haben für diesen Kurzfilm Super 8 Kameras verwendet, ' +
+        'um Videos aus der Vergangenheit zu fälschen bzw. nachzustellen. ' +
+        'Dieser Film wurde bei den Filmfestspielen Crossing Europe in Linz gezeigt."},' +
+
         '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
-        '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", "text":"null"},' +
+        '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", ' +
+        '"text":"Das dritte und somit letzte Projekt war ein Kurzfilm, welcher in der Zukunft in Wels spielt. ' +
+        'Ich habe für diesen Film sowohl bei der Kamera geholfen, ' +
+        'als auch den Dreh dokumentiert und in einem Making-of festgehalten."},' +
 
         '{"title":"Christzilla", "subtitle":"Es kommt", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/iV-OH5eTi0o", ' +
@@ -60,7 +70,9 @@ window.addEventListener('load', () => {
 
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
-        '"secondLink":"null", "text":"null"},' +
+        '"secondLink":"null", "text":"Im August 2019 entstand wie auch in den Jahren davor ein Kurzfilm. ' +
+        'Dieses Filmprojekt war sehr aufregend für mich, da ich zum ersten Mal alleine hinter der Kamera stand. ' +
+        'Ich habe mich zur Vorbereitung dieses Projekts sehr viel mit Winkeln und Perspektiven beschäftigt."},' +
 
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
