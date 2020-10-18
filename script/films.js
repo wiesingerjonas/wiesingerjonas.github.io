@@ -123,7 +123,12 @@ window.addEventListener('load', () => {
             if(filmsJson.films[i].iframeLink !== 'null') {
                 let iframe = document.createElement('iframe');
                 iframe.setAttribute('src', filmsJson.films[i].iframeLink);
-                filmDetail.appendChild(iframe);
+
+                let iframeContainer = document.createElement('div');
+                iframeContainer.setAttribute('id', 'iframeContainer');
+
+                iframeContainer.appendChild(iframe);
+                filmDetail.appendChild(iframeContainer);
             }
             //endregion
 
@@ -139,6 +144,8 @@ window.addEventListener('load', () => {
                 link.setAttribute('href', filmsJson.films[i].secondLink.split(';')[1]);
 
                 link.innerHTML = filmsJson.films[i].secondLink.split(';')[1];
+
+                linkInfo.setAttribute('id', 'secondLink');
 
                 linkInfo.appendChild(link);
 
@@ -171,10 +178,6 @@ window.addEventListener('load', () => {
                 child = parent.lastElementChild;
             }
         }
-
-        //TODO Delet this
-        document.getElementById('burger').click();
-        document.getElementById('navFilms').click();
 
     }
 });

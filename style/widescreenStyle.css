@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden !important;
+}
+
 nav #navClose {
     display: none;
 }
@@ -53,9 +57,57 @@ nav #navContent .navLinks:hover{
 }
 
 #filmDetail {
-
+    padding: 5vh 0 0 5vw;
 }
 
+#filmDetail #film_alignLeft {
+    height: 45vh;
+    width: 30vw;
+    float: left;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+#filmDetail #film_alignRight {
+    height: 45vh;
+    width: 70vw;
+    margin-bottom: 10vh;
+}
+#filmDetail #film_alignRight p{
+    width: 90vw;
+}
 #filmDetail #poster {
-    height: 40vh;
+    height: 50vh;
+}
+#filmDetail #iframeContainer {
+    display: flex;
+    justify-content: center;
+}
+#filmDetail #iframeContainer iframe {
+    width: 60vw;
+    height: 35vw;
+    border: none;
+}
+#filmDetail h1 {
+    font-size: 7vh;
+    margin: 1vh 0;
+}
+#filmDetail h2 {
+    font-size: 5vh;
+    margin: 1vh 0;
+}
+#filmDetail p {
+    font-size: 3vh;
+    margin: 1vh 0;
+}
+#filmDetail a {
+    color: #CCCCCC;
+}
+#filmDetail #year {
+    font-size: 5vh;
+}
+#filmDetail #secondLink {
+    margin: 1vh 0 5vh;
+    text-align: center;
 }
