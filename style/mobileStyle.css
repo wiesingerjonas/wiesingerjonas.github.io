@@ -45,3 +45,15 @@ nav #navContent p {
 .subDiv h1 {
     font-size: 4vh;
 }
+
+#films #imagecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3vw;
+}
+
+#films img{
+    width: 40vw;
+    margin: 1vh 1vw;
+    padding: 0;
+}
