@@ -26,6 +26,23 @@ window.addEventListener('load', () => {
         '"secondLink":"null", "text":"Auch im Jahr 2017 habe ich am Sommerprojekt des Medien Kultur Hauses teilgenommen. ' +
         'Im Laufe dieses Projekts entstand der Kurzfilm Best Friend Forever Or Whatever."},' +
 
+        '{"title":"Foreverloops", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
+        '"iframeLink":"https://player.vimeo.com/video/315526461", ' +
+        '"secondLink":"Making of;https://youtu.be/s22MuywfUxM", "text":"Dieser Werbespotdreh war für mich insofern etwas Besonderes, ' +
+        'da ich zum ersten Mal in meinem Leben bei einer professionellen Filmfirma, ' +
+        'mit dem Namen Las Gafas Films schnuppern durfte. ' +
+        'Ich habe für das Team den Dreh dokumentiert und in einem kurzen Making-of zusammengefasst. ' +
+        'Der Werbespot gewann bei den CANNES CORPORATE MEDIA & TV AWARDS ' +
+        'und im Film Forum Austria in der Kategorie TECHNOLOGIE FILM."},' +
+
+        '{"title":"Cats, Rats & Lovebirds", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
+        '"iframeLink":"http://player.vimeo.com/video/276199205", ' +
+        '"secondLink":"Making of;https://youtu.be/WHhRj5fAO40", "text":"Zum zweiten Mal wurde ich von den Las Gafas Films eingeladen, ' +
+        'sie auf einen Dreh zu begleiten. Im Rahmen des Wissenstransferzentrums West (WTZW) arbeitet ' +
+        'die Kunstuniversität Linz an neuen und alternativen Strategien für die Wissenschaftskommunikation. ' +
+        'Las Gafas Films durften das vierte und auch letzte Projekt dieser Reihe produzieren. ' +
+        'Cats, Rats & Lovebirds ist ein Kurzfilm der sich mit grundlegenden Aspekten der Siliziumphotonik befasst."},' +
+
         '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/-uIngfORXfI", ' +
         '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
