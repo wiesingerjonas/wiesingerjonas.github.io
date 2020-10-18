@@ -82,6 +82,11 @@ window.addEventListener('load', () => {
             }
             //endregion
 
+            //region year
+            let year = document.createElement('p');
+            year.innerHTML = filmsJson.films[i].year;
+            filmDetail.appendChild(year);
+            //endregion
         });
 
         function deleteChildren(parent) {
