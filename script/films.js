@@ -133,6 +133,27 @@ window.addEventListener('load', () => {
                 filmDetail.appendChild(linkInfo);
             }
             //endregion
+
+            //region images
+
+            let amountImg = filmsJson.films[i].amountImg;
+
+            for (let j = 0; j < amountImg; j++) {
+                let img = document.createElement('img');
+
+                console.log('./media/films/' + posterSrc + '_' + (j+1) + '.jpg');
+
+                img.src = './media/films/' + posterSrc + '_' + (j+1) + '.jpg';
+
+                if (amountImg <= 3) {
+                    img.style.width = 90/amountImg + 'vw';
+
+                    console.log((90 - 2 * amountImg) / amountImg + 'vw');
+                }
+
+                filmDetail.appendChild(img);
+            }
+            //endregion
         });
 
         function deleteChildren(parent) {
