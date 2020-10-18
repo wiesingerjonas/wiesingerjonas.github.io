@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/X2OR0cfNU-E", ' +
-        '"secondLink":"https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"Im Rahmen des Sommerprojekts, ' +
+        '"secondLink":"Making of,https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"Im Rahmen des Sommerprojekts, ' +
         'einer jährlich stattfindenden Reihe von Workshops Rund ums Thema Film, ' +
         'welche vom Medien Kultur Haus Wels initiiert wurden, habe ich das erste Mal 2016 teilgenommen.' +
         'In einem 15-köpfigen Team haben wir in einer Woche einen Kurzfilm mit dem Titel En Croix erstellt. ' +
@@ -31,9 +31,20 @@ window.addEventListener('load', () => {
         '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
         'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden."},' +
 
-        '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
-        '"iframeLink":"https://www.youtube.com/embed/0Vi-V9bhUTI", ' +
-        '"secondLink":"null", "text":"null"}]}';
+        '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
+        '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
+        '"secondLink":";Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", "text":"null"},' +
+
+        '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"2", ' +
+        '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
+        '"secondLink":"null", "text":"null"},' +
+
+        '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
+        '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
+        '"secondLink":"Behind the Scenes;https://www.youtube.com/watch?v=DvkAO1lEfFQ", ' +
+        '"text":"Im September wurde ich von den Musicalwaves Wels kontaktiert, ' +
+        'ob ich ihre Inszenierung vom bekannten Musical Der kleine Horrorladen aufnehmen könnte. ' +
+        'Ich habe ihnen neben den 2 Aufnahmen des gesamten Stücks auch ein Making of und einen Trailer gemacht."}]}';
 
     let filmsJson = JSON.parse(films);
 
@@ -77,7 +88,7 @@ window.addEventListener('load', () => {
             //region subtitle
             if(filmsJson.films[i].subtitle !== 'null') {
                 let subtitle = document.createElement('h2');
-                subtitle.innerHTML = filmsJson.films[i].title;
+                subtitle.innerHTML = filmsJson.films[i].subtitle;
                 filmDetail.appendChild(subtitle);
             }
             //endregion
@@ -96,11 +107,15 @@ window.addEventListener('load', () => {
             }
             //endregion
 
+            //region iframe
             if(filmsJson.films[i].iframeLink !== 'null') {
                 let iframe = document.createElement('iframe');
                 iframe.setAttribute('src', filmsJson.films[i].iframeLink);
                 filmDetail.appendChild(iframe);
             }
+            //endregion
+
+
         });
 
         function deleteChildren(parent) {

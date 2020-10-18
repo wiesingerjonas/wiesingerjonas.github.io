@@ -1,7 +1,7 @@
 /*region nav*/
 nav {
-    height: 100vh;
     line-height: 100vh;
+    height: 100vh;
     transform: translateX(-100vh);
     transition: transform 0.8s ease-in-out;
     position: fixed;
@@ -22,12 +22,14 @@ nav #navContent {
 }
 nav #navContent p {
     font-size: 5vh;
-    width: 90vw;
+    width: 100vw;
     margin: 0 0 5vh 10vw;
 }
 #burgerContainer {
     display: block !important;
     padding: 2vh 5vw;
+    width: 100vw !important;
+
 }
 #burgerContainer #burger {
     font-size: 6vh;
@@ -36,7 +38,7 @@ nav #navContent p {
 }
 /*endregion*/
 
-.subDiv, #filmDetail {
+.subDiv {
     min-height: 90vh;
     width: 100vw;
     padding: 0 5vw;
@@ -49,7 +51,7 @@ nav #navContent p {
 #films #imageContainer {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 3vw;
+    padding-left: 8vw;
 }
 
 #films img{
@@ -59,6 +61,8 @@ nav #navContent p {
 }
 
 #filmDetail {
+    min-height: 90vh;
+    width: 100vw;
     padding: 1vh 5vw;
 }
 
