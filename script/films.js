@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/X2OR0cfNU-E", ' +
-        '"secondLink":"Making of,https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"Im Rahmen des Sommerprojekts, ' +
+        '"secondLink":"Making of;https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"Im Rahmen des Sommerprojekts, ' +
         'einer jährlich stattfindenden Reihe von Workshops Rund ums Thema Film, ' +
         'welche vom Medien Kultur Haus Wels initiiert wurden, habe ich das erste Mal 2016 teilgenommen.' +
         'In einem 15-köpfigen Team haben wir in einer Woche einen Kurzfilm mit dem Titel En Croix erstellt. ' +
@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
 
         '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
-        '"secondLink":";Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", "text":"null"},' +
+        '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", "text":"null"},' +
 
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
@@ -115,7 +115,24 @@ window.addEventListener('load', () => {
             }
             //endregion
 
+            //region secondLink
+            if(filmsJson.films[i].secondLink !== 'null') {
 
+                let linkInfo = document.createElement('p');
+
+                linkInfo.innerHTML = filmsJson.films[i].secondLink.split(';')[0] + ':';
+
+                let link = document.createElement('a');
+
+                link.setAttribute('href', filmsJson.films[i].secondLink.split(';')[1]);
+
+                link.innerHTML = filmsJson.films[i].secondLink.split(';')[1];
+
+                linkInfo.appendChild(link);
+
+                filmDetail.appendChild(linkInfo);
+            }
+            //endregion
         });
 
         function deleteChildren(parent) {
