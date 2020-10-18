@@ -1,7 +1,8 @@
 window.addEventListener('load', () => {
 
     let imageContainer = document.getElementById('imageContainer');
-    let img;
+    let filmDetail = document.getElementById('filmDetail');
+    let filmsDiv = document.getElementById('films');
 
     let films = '{"films":[' +
         '{"title":"OK Center for Contemporary Art", "subtitle":"null", "year":"2015", ' +
@@ -38,7 +39,7 @@ window.addEventListener('load', () => {
 
     for (let i = 0; i < filmsJson.films.length; i++) {
 
-        img = document.createElement('img');
+        let img = document.createElement('img');
 
         let imgSrc =  filmsJson.films[i].title
             .replace(/\s/g, "")
@@ -48,5 +49,10 @@ window.addEventListener('load', () => {
         img.src = './media/films/' + imgSrc + '.png';
         imageContainer.appendChild(img);
 
+        img.addEventListener('click', () => {
+            console.log('zeas');
+            filmDetail.style.display = 'block';
+            filmsDiv.style.display = 'none';
+        });
     }
 });

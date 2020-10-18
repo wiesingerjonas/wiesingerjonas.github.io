@@ -36,7 +36,7 @@ nav #navContent p {
 }
 /*endregion*/
 
-.subDiv {
+.subDiv, #filmDetail {
     min-height: 90vh;
     width: 100vw;
     padding: 0 5vw;

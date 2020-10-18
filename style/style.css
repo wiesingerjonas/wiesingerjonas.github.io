@@ -15,9 +15,9 @@ nav {
     background-color: #111111;
 }
 
-.subDiv {
+.subDiv, #filmDetail {
     display: none;
 }
-#films {
+#home {
     display: block;
 }
