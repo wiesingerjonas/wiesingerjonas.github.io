@@ -79,7 +79,12 @@ window.addEventListener('load', () => {
         '"secondLink":"Behind the Scenes;https://www.youtube.com/watch?v=DvkAO1lEfFQ", ' +
         '"text":"Im September wurde ich von den Musicalwaves Wels kontaktiert, ' +
         'ob ich ihre Inszenierung vom bekannten Musical Der kleine Horrorladen aufnehmen könnte. ' +
-        'Ich habe ihnen neben den 2 Aufnahmen des gesamten Stücks auch ein Making of und einen Trailer gemacht."}]}';
+        'Ich habe ihnen neben den 2 Aufnahmen des gesamten Stücks auch ein Making of und einen Trailer gemacht."},' +
+
+        '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
+        '"iframeLink":"null", ' +
+        '"secondLink":"null", ' +
+        '"text":"null"}]}';
 
     let filmsJson = JSON.parse(films);
 
@@ -199,6 +204,8 @@ window.addEventListener('load', () => {
 
                 if (amountImg <= 3) {
                     img.style.width = 90/amountImg + 'vw';
+                } else if (amountImg <= 6) {
+                    img.style.width = 90/(amountImg-3) + 'vw';
                 }
 
                 filmDetail.appendChild(img);
