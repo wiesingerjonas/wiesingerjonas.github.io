@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
         '"secondLink":"null", "text":"Auch im Jahr 2017 habe ich am Sommerprojekt des Medien Kultur Hauses teilgenommen. ' +
         'Im Laufe dieses Projekts entstand der Kurzfilm Best Friend Forever Or Whatever."},' +
 
-        '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"3", ' +
+        '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/-uIngfORXfI", ' +
         '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
         'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden."},' +
@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
         '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", "text":"null"},' +
 
-        '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"2", ' +
+        '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
         '"secondLink":"null", "text":"null"},' +
 
@@ -147,8 +147,6 @@ window.addEventListener('load', () => {
 
                 if (amountImg <= 3) {
                     img.style.width = 90/amountImg + 'vw';
-
-                    console.log((90 - 2 * amountImg) / amountImg + 'vw');
                 }
 
                 filmDetail.appendChild(img);
