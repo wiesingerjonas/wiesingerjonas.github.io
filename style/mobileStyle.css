@@ -38,6 +38,7 @@ nav #navContent p {
 }
 /*endregion*/
 
+/*region film*/
 .subDiv {
     min-height: 90vh;
     width: 100vw;
@@ -87,4 +88,26 @@ nav #navContent p {
 }
 #filmDetail a {
     color: #E0E0E0;
+}
+/*endregion*/
+
+#threeD {
+
+}
+
+#threeD h1 {
+    font-size: 80px;
+}
+
+#threeD p {
+    font-size: 50px;
+}
+
+#threeD a {
+    color: #CCCCCC;
+}
+
+#threeD img{
+    width: 80vw;
+    margin-left: 10vw;
 }
