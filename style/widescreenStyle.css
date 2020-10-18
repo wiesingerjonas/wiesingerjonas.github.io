@@ -21,6 +21,9 @@ nav #navContent .navLinks:hover{
     color: #e9931a;
 }
 
+#films h1 {
+    margin-left: 10.5vw;
+}
 @media only screen and (max-aspect-ratio: 4/3) {
     #films #imageContainer {
         display: flex;
@@ -47,4 +50,12 @@ nav #navContent .navLinks:hover{
         margin: 2vh 0.5vw;
         padding: 0;
     }
+}
+
+#filmDetail {
+
+}
+
+#filmDetail #poster {
+    height: 40vh;
 }

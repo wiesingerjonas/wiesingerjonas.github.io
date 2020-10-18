@@ -66,6 +66,12 @@ window.addEventListener('load', () => {
             filmDetail.style.display = 'block';
             filmsDiv.style.display = 'none';
 
+            let film_alignLeft = document.createElement('div');
+            film_alignLeft.setAttribute('id', 'film_alignLeft');
+
+            let film_alignRight = document.createElement('div');
+            film_alignRight.setAttribute('id', 'film_alignRight');
+
             //region poster
             let poster = document.createElement('img');
 
@@ -76,20 +82,23 @@ window.addEventListener('load', () => {
 
             poster.src = './media/films/' + posterSrc + '.png';
             poster.setAttribute("id", "poster");
-            filmDetail.appendChild(poster);
+
+            film_alignLeft.appendChild(poster);
+
+            filmDetail.appendChild(film_alignLeft);
             //endregion
 
             //region title
             let title = document.createElement('h1');
             title.innerHTML = filmsJson.films[i].title;
-            filmDetail.appendChild(title);
+            film_alignRight.appendChild(title);
             //endregion
 
             //region subtitle
             if(filmsJson.films[i].subtitle !== 'null') {
                 let subtitle = document.createElement('h2');
                 subtitle.innerHTML = filmsJson.films[i].subtitle;
-                filmDetail.appendChild(subtitle);
+                film_alignRight.appendChild(subtitle);
             }
             //endregion
 
@@ -97,16 +106,18 @@ window.addEventListener('load', () => {
             let year = document.createElement('p');
             year.innerHTML = filmsJson.films[i].year;
             year.setAttribute('id','year');
-            filmDetail.appendChild(year);
+            film_alignRight.appendChild(year);
             //endregion
 
             //region text
             if(filmsJson.films[i].text !== 'null') {
                 let text = document.createElement('p');
                 text.innerHTML = filmsJson.films[i].text;
-                filmDetail.appendChild(text);
+                film_alignRight.appendChild(text);
             }
             //endregion
+
+            filmDetail.appendChild(film_alignRight);
 
             //region iframe
             if(filmsJson.films[i].iframeLink !== 'null') {
