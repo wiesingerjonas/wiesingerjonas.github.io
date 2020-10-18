@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
     let currentSite = home;
 
     for (let i = 0; i < navLinks.length; i++) {
-        console.log(i + " " + navLinks[i] + " " + subDiv[i])
         navLinks[i].addEventListener('click', () => {
             currentSite.style.display = 'none';
             subDiv[i].style.display = 'block';

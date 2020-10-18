@@ -46,7 +46,7 @@ nav #navContent p {
     font-size: 4vh;
 }
 
-#films #imagecontainer {
+#films #imageContainer {
     display: flex;
     flex-wrap: wrap;
     padding-left: 3vw;

@@ -22,7 +22,7 @@ nav #navContent .navLinks:hover{
 }
 
 @media only screen and (max-aspect-ratio: 4/3) {
-    #films #imagecontainer {
+    #films #imageContainer {
         display: flex;
         flex-wrap: wrap;
         padding-left: 10vw;
@@ -36,7 +36,7 @@ nav #navContent .navLinks:hover{
 }
 
 @media only screen and (min-aspect-ratio: 4/3) {
-    #films #imagecontainer {
+    #films #imageContainer {
         display: flex;
         flex-wrap: wrap;
         padding-left: 10vw;
