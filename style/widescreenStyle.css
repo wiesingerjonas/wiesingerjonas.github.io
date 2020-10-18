@@ -20,3 +20,31 @@ nav #navContent .navLinks {
 nav #navContent .navLinks:hover{
     color: #e9931a;
 }
+
+@media only screen and (max-aspect-ratio: 4/3) {
+    #films #imagecontainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10vw;
+    }
+
+    #films img{
+        width: 19vw;
+        margin: 2vh 0.5vw;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 4/3) {
+    #films #imagecontainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10vw;
+    }
+
+    #films img{
+        width: 15vw;
+        margin: 2vh 0.5vw;
+        padding: 0;
+    }
+}
