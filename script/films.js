@@ -68,6 +68,12 @@ window.addEventListener('load', () => {
             filmDetail.appendChild(poster);
             //endregion
 
+            //region title
+            let title = document.createElement('h1');
+            title.innerHTML = filmsJson.films[i].title;
+            filmDetail.appendChild(title);
+            //endregion
+
         });
 
         function deleteChildren(parent) {
