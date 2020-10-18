@@ -52,6 +52,12 @@ window.addEventListener('load', () => {
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
         '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", "text":"null"},' +
 
+        '{"title":"Christzilla", "subtitle":"Es kommt", "year":"2018", "amountImg":"0", ' +
+        '"iframeLink":"https://www.youtube.com/embed/iV-OH5eTi0o", ' +
+        '"secondLink":"Episode #1;https://www.youtube.com/embed/h10DaiA51OY", "text":"Dieser satirische Filmtrailer ' +
+        'ist aus einer spontanen Idee entstanden und teasert einen Film an, in dem das überdimensionale Christkind ' +
+        'vom Welser Adventmarkt die Stadt angreift. Beim Dreh von Episode #1 war ich leider nicht beteiligt."},' +
+
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
         '"secondLink":"null", "text":"null"},' +
