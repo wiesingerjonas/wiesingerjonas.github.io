@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
         'in diesen Beruf hineinschnuppern."},' +
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
-        '"iframeLink":"https://www.youtube.com/watch?v=X2OR0cfNU-E", ' +
+        '"iframeLink":"https://www.youtube.com/embed/X2OR0cfNU-E", ' +
         '"secondLink":"https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"Im Rahmen des Sommerprojekts, ' +
         'einer jährlich stattfindenden Reihe von Workshops Rund ums Thema Film, ' +
         'welche vom Medien Kultur Haus Wels initiiert wurden, habe ich das erste Mal 2016 teilgenommen.' +
@@ -22,17 +22,17 @@ window.addEventListener('load', () => {
         'wie es bei einem Kurzfilmdreh abläuft."},' +
 
         '{"title":"Best Friend Forever Or Whatever", "subtitle":"null", "year":"2017", "amountImg":"0", ' +
-        '"iframeLink":"https://www.youtube.com/watch?v=V_XP24q9Wp4", ' +
+        '"iframeLink":"https://www.youtube.com/embed/V_XP24q9Wp4", ' +
         '"secondLink":"null", "text":"Auch im Jahr 2017 habe ich am Sommerprojekt des Medien Kultur Hauses teilgenommen. ' +
         'Im Laufe dieses Projekts entstand der Kurzfilm Best Friend Forever Or Whatever."},' +
 
         '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"3", ' +
-        '"iframeLink":"https://www.youtube.com/watch?v=-uIngfORXfI", ' +
+        '"iframeLink":"https://www.youtube.com/embed/-uIngfORXfI", ' +
         '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
         'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden."},' +
 
         '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
-        '"iframeLink":"https://www.youtube.com/watch?v=0Vi-V9bhUTI", ' +
+        '"iframeLink":"https://www.youtube.com/embed/0Vi-V9bhUTI", ' +
         '"secondLink":"null", "text":"null"}]}';
 
     let filmsJson = JSON.parse(films);
@@ -77,7 +77,7 @@ window.addEventListener('load', () => {
             //region subtitle
             if(filmsJson.films[i].subtitle !== 'null') {
                 let subtitle = document.createElement('h2');
-                subtitle.innerHTML = filmsJson.subfilms[i].title;
+                subtitle.innerHTML = filmsJson.films[i].title;
                 filmDetail.appendChild(subtitle);
             }
             //endregion
@@ -95,6 +95,12 @@ window.addEventListener('load', () => {
                 filmDetail.appendChild(text);
             }
             //endregion
+
+            if(filmsJson.films[i].iframeLink !== 'null') {
+                let iframe = document.createElement('iframe');
+                iframe.setAttribute('src', filmsJson.films[i].iframeLink);
+                filmDetail.appendChild(iframe);
+            }
         });
 
         function deleteChildren(parent) {

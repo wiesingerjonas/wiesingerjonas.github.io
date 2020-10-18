@@ -65,3 +65,7 @@ nav #navContent p {
 #filmDetail #poster {
     width: 90vw;
 }
+#filmDetail iframe {
+    width: 90vw;
+    height: 50vw;
+}
