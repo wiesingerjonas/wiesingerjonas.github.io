@@ -1,4 +1,5 @@
 window.addEventListener('load', () => {
+
     let navClose = document.getElementById('navClose');
 
     let navLinks = document.getElementsByClassName('navLinks');

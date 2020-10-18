@@ -96,6 +96,7 @@ window.addEventListener('load', () => {
             //region year
             let year = document.createElement('p');
             year.innerHTML = filmsJson.films[i].year;
+            year.setAttribute('id','year');
             filmDetail.appendChild(year);
             //endregion
 
@@ -120,7 +121,7 @@ window.addEventListener('load', () => {
 
                 let linkInfo = document.createElement('p');
 
-                linkInfo.innerHTML = filmsJson.films[i].secondLink.split(';')[0] + ':';
+                linkInfo.innerHTML = filmsJson.films[i].secondLink.split(';')[0] + ': ';
 
                 let link = document.createElement('a');
 
@@ -141,8 +142,6 @@ window.addEventListener('load', () => {
             for (let j = 0; j < amountImg; j++) {
                 let img = document.createElement('img');
 
-                console.log('./media/films/' + posterSrc + '_' + (j+1) + '.jpg');
-
                 img.src = './media/films/' + posterSrc + '_' + (j+1) + '.jpg';
 
                 if (amountImg <= 3) {
@@ -161,5 +160,10 @@ window.addEventListener('load', () => {
                 child = parent.lastElementChild;
             }
         }
+
+        //TODO Delet this
+        document.getElementById('burger').click();
+        document.getElementById('navFilms').click();
+
     }
 });

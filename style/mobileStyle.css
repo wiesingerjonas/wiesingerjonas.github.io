@@ -62,14 +62,29 @@ nav #navContent p {
 
 #filmDetail {
     min-height: 90vh;
-    width: 100vw;
-    padding: 1vh 5vw;
+    padding: 1vh 0 10vh 10vw;
 }
 
 #filmDetail #poster {
-    width: 90vw;
+    width: 80vw;
+    margin: 0 5vw;
 }
 #filmDetail iframe {
     width: 90vw;
     height: 50vw;
+}
+#filmDetail h1 {
+    font-size: 50px;
+}
+#filmDetail h2 {
+    font-size: 30px;
+}
+#filmDetail p {
+    font-size: 20px;
+}
+#filmDetail #year {
+    color: #CCCCCC;
+}
+#filmDetail a {
+    color: #E0E0E0;
 }
