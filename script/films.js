@@ -50,9 +50,32 @@ window.addEventListener('load', () => {
         imageContainer.appendChild(img);
 
         img.addEventListener('click', () => {
-            console.log('zeas');
+            deleteChildren(filmDetail);
+
             filmDetail.style.display = 'block';
             filmsDiv.style.display = 'none';
+
+            //region poster
+            let poster = document.createElement('img');
+
+            let posterSrc =  filmsJson.films[i].title
+                .replace(/\s/g, "")
+                .toLowerCase()
+                .replace(/[^a-zA-Z ]/g, "");
+
+            poster.src = './media/films/' + posterSrc + '.png';
+            poster.setAttribute("id", "poster");
+            filmDetail.appendChild(poster);
+            //endregion
+
         });
+
+        function deleteChildren(parent) {
+            let child = parent.lastElementChild;
+            while (child) {
+                parent.removeChild(child);
+                child = parent.lastElementChild;
+            }
+        }
     }
 });
