@@ -74,6 +74,13 @@ window.addEventListener('load', () => {
         'Dieses Filmprojekt war sehr aufregend für mich, da ich zum ersten Mal alleine hinter der Kamera stand. ' +
         'Ich habe mich zur Vorbereitung dieses Projekts sehr viel mit Winkeln und Perspektiven beschäftigt."},' +
 
+        '{"title":"All About You", "subtitle":"Vicky - Music Video", "year":"2019", "amountImg":"3", ' +
+        '"iframeLink":"https://www.youtube.com/embed/eEItw8KVsPk", ' +
+        '"secondLink":"null", "text":"Im September 2019 wurde ich ' +
+        'von Vicky (Vicky Kren) zu einem spontanen Musikvideodreh  eingeladen. ' +
+        'Sowohl Vicky als auch ich selbst haben zuvor noch keine praktische Erfahrung in der Musikvideoproduktion. ' +
+        'Neben der Kamera habe ich auch den Zusammenschnitt der meist spontanen Shots übernommen."},' +
+
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
         '"secondLink":"Behind the Scenes;https://www.youtube.com/watch?v=DvkAO1lEfFQ", ' +
