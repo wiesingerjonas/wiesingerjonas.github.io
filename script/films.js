@@ -91,7 +91,10 @@ window.addEventListener('load', () => {
         '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
         '"iframeLink":"null", ' +
         '"secondLink":"null", ' +
-        '"text":"null"}]}';
+        '"text":"Im Sommer 2020 hat trot Corona gottseidank das Sommerprojekt des Medien Kultur Hauses stattgefunden. ' +
+        'In diesem Jahr haben wir uns für eine Coming-of-age Geschichte über 2 Schwestern, die einen Tag im Tiergarten ' +
+        'Wels verbringen entschieden. Der Dreh war trotz vieler erschwerender Gründe (viele Menschen, Coronamasnahmen) ' +
+        'mit dem sehr ambitionierten Team sehr lehrreich. Die Premiere wurde vorerst auf unbekannt verschoben."}]}';
 
     let filmsJson = JSON.parse(films);
 
