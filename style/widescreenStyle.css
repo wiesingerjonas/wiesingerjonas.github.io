@@ -117,6 +117,21 @@ nav #navContent .navLinks:hover{
 }
 /*endregion*/
 
+#photos {
+
+}
+
+#photos #imgContainer {
+    width: 100vw;
+}
+#photos #imgContainer img{
+    width: 30vw;
+    height: 30vw;
+    object-fit:cover;
+    padding: 0;
+}
+
+/*region 3d*/
 #threeD {
     padding: 5vh 0 0 5vw;
 }
@@ -136,3 +151,4 @@ nav #navContent .navLinks:hover{
     width: 80vw;
     margin-left: 5vw;
 }
+/*endregion*/
