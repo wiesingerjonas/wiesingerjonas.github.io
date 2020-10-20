@@ -9,7 +9,8 @@ window.addEventListener('load', () => {
         '"amountImg":"2", "iframeLink":"null", ' +
         '"secondLink":"null", "text":"Im Rahmen des Drehs eines Fernsehbeitrags von BildungsTV, ' +
         'durfte ich das Kamerateam einen Tag lang begleiten und durfte, da ich damals schon Kameramann werden wollte, ' +
-        'in diesen Beruf hineinschnuppern."},' +
+        'in diesen Beruf hineinschnuppern.", ' +
+        '"popularity":"13"},' +
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/X2OR0cfNU-E", ' +
@@ -19,12 +20,14 @@ window.addEventListener('load', () => {
         'In einem 15-köpfigen Team haben wir in einer Woche einen Kurzfilm mit dem Titel En Croix erstellt. ' +
         'In diesem Projekt haben Profis mit Amateuren oder Anfänger ihre Erfahrungen austauschen, ' +
         'und ihr wissen weitergeben können. Ich habe bei diesem Filmdreh zum ersten Mal erfahren ' +
-        'wie es bei einem Kurzfilmdreh abläuft."},' +
+        'wie es bei einem Kurzfilmdreh abläuft.", ' +
+        '"popularity":"3"},' +
 
         '{"title":"Best Friend Forever Or Whatever", "subtitle":"null", "year":"2017", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/V_XP24q9Wp4", ' +
         '"secondLink":"null", "text":"Auch im Jahr 2017 habe ich am Sommerprojekt des Medien Kultur Hauses teilgenommen. ' +
-        'Im Laufe dieses Projekts entstand der Kurzfilm Best Friend Forever Or Whatever."},' +
+        'Im Laufe dieses Projekts entstand der Kurzfilm Best Friend Forever Or Whatever.", ' +
+        '"popularity":"11"},' +
 
         '{"title":"Foreverloops", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
         '"iframeLink":"https://player.vimeo.com/video/315526461", ' +
@@ -33,7 +36,8 @@ window.addEventListener('load', () => {
         'mit dem Namen Las Gafas Films schnuppern durfte. ' +
         'Ich habe für das Team den Dreh dokumentiert und in einem kurzen Making-of zusammengefasst. ' +
         'Der Werbespot gewann bei den CANNES CORPORATE MEDIA & TV AWARDS ' +
-        'und im Film Forum Austria in der Kategorie TECHNOLOGIE FILM."},' +
+        'und im Film Forum Austria in der Kategorie TECHNOLOGIE FILM.", ' +
+        '"popularity":"1"},' +
 
         '{"title":"Cats, Rats & Lovebirds", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
         '"iframeLink":"http://player.vimeo.com/video/276199205", ' +
@@ -41,52 +45,59 @@ window.addEventListener('load', () => {
         'sie auf einen Dreh zu begleiten. Im Rahmen des Wissenstransferzentrums West (WTZW) arbeitet ' +
         'die Kunstuniversität Linz an neuen und alternativen Strategien für die Wissenschaftskommunikation. ' +
         'Las Gafas Films durften das vierte und auch letzte Projekt dieser Reihe produzieren. ' +
-        'Cats, Rats & Lovebirds ist ein Kurzfilm der sich mit grundlegenden Aspekten der Siliziumphotonik befasst."},' +
+        'Cats, Rats & Lovebirds ist ein Kurzfilm der sich mit grundlegenden Aspekten der Siliziumphotonik befasst.", ' +
+        '"popularity":"5"},' +
 
         '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/-uIngfORXfI", ' +
         '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
-        'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden."},' +
+        'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden.", ' +
+        '"popularity":"2"},' +
 
         '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/0Vi-V9bhUTI", ' +
         '"secondLink":"null", "text":"Das zweite Filmprojekt dieser Reihe war eine Mockumentary, ein fiktionaler Dokumentarfilm, ' +
         'welcher Unwahrheiten für wahr verkauft. Wir haben für diesen Kurzfilm Super 8 Kameras verwendet, ' +
         'um Videos aus der Vergangenheit zu fälschen bzw. nachzustellen. ' +
-        'Dieser Film wurde bei den Filmfestspielen Crossing Europe in Linz gezeigt."},' +
+        'Dieser Film wurde bei den Filmfestspielen Crossing Europe in Linz gezeigt.", ' +
+        '"popularity":"6"},' +
 
         '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
         '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", ' +
         '"text":"Das dritte und somit letzte Projekt war ein Kurzfilm, welcher in der Zukunft in Wels spielt. ' +
         'Ich habe für diesen Film sowohl bei der Kamera geholfen, ' +
-        'als auch den Dreh dokumentiert und in einem Making-of festgehalten."},' +
+        'als auch den Dreh dokumentiert und in einem Making-of festgehalten.", ' +
+        '"popularity":"7"},' +
 
         '{"title":"Christzilla", "subtitle":"Es kommt", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/iV-OH5eTi0o", ' +
         '"secondLink":"Episode #1;https://www.youtube.com/embed/h10DaiA51OY", "text":"Dieser satirische Filmtrailer ' +
         'ist aus einer spontanen Idee entstanden und teasert einen Film an, in dem das überdimensionale Christkind ' +
-        'vom Welser Adventmarkt die Stadt angreift. Beim Dreh von Episode #1 war ich leider nicht beteiligt."},' +
+        'vom Welser Adventmarkt die Stadt angreift. Beim Dreh von Episode #1 war ich leider nicht beteiligt.", ' +
+        '"popularity":"12"},' +
 
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
         '"secondLink":"null", "text":"Im August 2019 entstand wie auch in den Jahren davor ein Kurzfilm. ' +
         'Dieses Filmprojekt war sehr aufregend für mich, da ich zum ersten Mal alleine hinter der Kamera stand. ' +
-        'Ich habe mich zur Vorbereitung dieses Projekts sehr viel mit Winkeln und Perspektiven beschäftigt."},' +
+        'Ich habe mich zur Vorbereitung dieses Projekts sehr viel mit Winkeln und Perspektiven beschäftigt."' +
+        ', "popularity":"8"},' +
 
         '{"title":"All About You", "subtitle":"Vicky - Music Video", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/eEItw8KVsPk", ' +
         '"secondLink":"null", "text":"Im September 2019 wurde ich ' +
         'von Vicky (Vicky Kren) zu einem spontanen Musikvideodreh  eingeladen. ' +
         'Sowohl Vicky als auch ich selbst haben zuvor noch keine praktische Erfahrung in der Musikvideoproduktion. ' +
-        'Neben der Kamera habe ich auch den Zusammenschnitt der meist spontanen Shots übernommen."},' +
+        'Neben der Kamera habe ich auch den Zusammenschnitt der meist spontanen Shots übernommen.", "popularity":"10"},' +
 
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
         '"secondLink":"Behind the Scenes;https://www.youtube.com/watch?v=DvkAO1lEfFQ", ' +
         '"text":"Im September wurde ich von den Musicalwaves Wels kontaktiert, ' +
         'ob ich ihre Inszenierung vom bekannten Musical Der kleine Horrorladen aufnehmen könnte. ' +
-        'Ich habe ihnen neben den 2 Aufnahmen des gesamten Stücks auch ein Making of und einen Trailer gemacht."},' +
+        'Ich habe ihnen neben den 2 Aufnahmen des gesamten Stücks auch ein Making of und einen Trailer gemacht.", ' +
+        '"popularity":"9"},' +
 
         '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
         '"iframeLink":"null", ' +
@@ -94,7 +105,8 @@ window.addEventListener('load', () => {
         '"text":"Im Sommer 2020 hat trot Corona gottseidank das Sommerprojekt des Medien Kultur Hauses stattgefunden. ' +
         'In diesem Jahr haben wir uns für eine Coming-of-age Geschichte über 2 Schwestern, die einen Tag im Tiergarten ' +
         'Wels verbringen entschieden. Der Dreh war trotz vieler erschwerender Gründe (viele Menschen, Coronamasnahmen) ' +
-        'mit dem sehr ambitionierten Team sehr lehrreich. Die Premiere wurde vorerst auf unbekannt verschoben."}]}';
+        'mit dem sehr ambitionierten Team sehr lehrreich. Die Premiere wurde vorerst auf unbekannt verschoben.", ' +
+        '"popularity":"4"}]}';
 
     let filmsJson = JSON.parse(films);
 

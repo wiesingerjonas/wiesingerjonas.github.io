@@ -115,8 +115,28 @@ nav #navContent .navLinks:hover{
     margin-bottom: 5vh;
     text-align: center;
 }
+#films #sortMethod {
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: #111111;
+
+}
+#films #sortMethod #sortMethodSelecter{
+    font-size: 3vh;
+    padding: 0.5vh 1vw;
+    margin: 0;
+    width: 10vw;
+}
+#films #sortMethod #dropdown{
+    position: absolute;
+    z-index: 100;
+    width: 10vw;
+    background-color: #111111;
+
+}
 /*endregion*/
 
+/*region photos*/
 #photos {
 
 }
@@ -130,6 +150,7 @@ nav #navContent .navLinks:hover{
     object-fit:cover;
     padding: 0;
 }
+/*endregion*/
 
 /*region 3d*/
 #threeD {
