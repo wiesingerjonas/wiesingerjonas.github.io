@@ -146,12 +146,13 @@ nav #navContent .navLinks:hover{
 /*endregion*/
 
 /*region photos*/
-#photos {
-
+#photos h1{
+    padding-left: 5vw;
 }
 
 #photos #imgContainer {
     width: 100vw;
+    padding-left: 5vw;
 }
 #photos #imgContainer img{
     width: 30vw;
