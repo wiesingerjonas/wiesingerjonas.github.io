@@ -162,6 +162,28 @@ nav #navContent .navLinks:hover{
 }
 /*endregion*/
 
+/*region web*/
+#web {
+     padding: 0 5vw;
+}
+#web h2, #web p, #web iframe, #web hr{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+#web #container {
+    display: flex;
+    justify-content: center;
+}
+#web iframe {
+    border: none;
+    width: 70vw;
+    height: 40vw;
+}
+#web hr {
+    color: #e2e2e2;
+}
+/*endregion*/
+
 /*region 3d*/
 #threeD {
     padding: 5vh 0 0 5vw;
