@@ -21,3 +21,6 @@ nav {
 #home {
     display: block;
 }
+img {
+    user-select: none;
+}

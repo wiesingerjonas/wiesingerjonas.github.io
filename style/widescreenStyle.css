@@ -154,11 +154,22 @@ nav #navContent .navLinks:hover{
     width: 100vw;
     padding-left: 5vw;
 }
-#photos #imgContainer img{
-    width: 30vw;
-    height: 30vw;
+#photos #imgContainer img {
     object-fit:cover;
     padding: 0;
+}
+@media only screen and (max-aspect-ratio: 4/3) {
+    #photos #imgContainer img {
+        width: 45vw;
+        height: 45vw;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 4/3) {
+    #photos #imgContainer img {
+        width: 30vw;
+        height: 30vw;
+    }
 }
 /*endregion*/
 
