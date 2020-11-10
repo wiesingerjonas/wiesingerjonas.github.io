@@ -34,6 +34,7 @@ nav #navContent .navLinks:hover{
     padding-top: 2vh;
     justify-content: center;
 }
+
 #home #subHeader {
     width: 90vw;
     text-align: center;
@@ -79,6 +80,7 @@ nav #navContent .navLinks:hover{
         font-size: 2.5vh;
     }
 }
+
 /*endregion*/
 
 /*region films*/

@@ -38,6 +38,39 @@ nav #navContent p {
 }
 /*endregion*/
 
+/*region home*/
+#home {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 100vw;
+    padding-top: 2vh;
+    justify-content: center;
+}
+#home #logo {
+    width: 30vw;
+    margin-left: 35vw;
+}
+#home #subHeader {
+    width: 100vw;
+    text-align: center;
+    font-size: 2vh;
+}
+#home .content-align {
+    margin-bottom: 5vh;
+}
+#home .content-align img {
+    width: 80vw;
+    margin-left: 10vw;
+}
+#home .content-align div {
+    width: 95vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 1.8vh;
+}
+
+/*endregion*/
+
 /*region film*/
 .subDiv {
     min-height: 90vh;
@@ -91,6 +124,7 @@ nav #navContent p {
 }
 /*endregion*/
 
+/*region threeD*/
 #threeD {
 
 }
@@ -111,3 +145,4 @@ nav #navContent p {
     width: 80vw;
     margin-left: 10vw;
 }
+/*endregion*/
