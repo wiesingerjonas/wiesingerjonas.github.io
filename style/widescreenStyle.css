@@ -27,6 +27,60 @@ nav #navContent .navLinks:hover{
 }
 /*endregion*/
 
+/*region photos*/
+#home {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vh;
+    justify-content: center;
+}
+#home #subHeader {
+    width: 90vw;
+    text-align: center;
+}
+#home .content-align {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+#home .content-align img{
+    width: 45vw;
+    height: 30vw;
+}
+#home .content-align div{
+    width: 39vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 30vh;
+}
+
+@media only screen and (max-aspect-ratio: 4/3) {
+    #home #logo {
+        width: 26vw;
+        margin-left: 32vw;
+    }
+    #home #subHeader {
+        font-size: 2.5vh;
+    }
+    #home .content-align div{
+        font-size: 1.8vh;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 4/3) {
+    #home #logo {
+        width: 15vw;
+        margin-left: 37.5vw;
+    }
+    #home #subHeader {
+        font-size: 3.5vh;
+    }
+    #home .content-align div{
+        font-size: 2.5vh;
+    }
+}
+/*endregion*/
+
 /*region films*/
 #films h1 {
     margin-left: 10.5vw;
