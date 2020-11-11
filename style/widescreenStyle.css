@@ -274,3 +274,22 @@ nav #navContent .navLinks:hover{
     margin-left: 5vw;
 }
 /*endregion*/
+
+#footer {
+    width: 100vw;
+    background: #111111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#footer a {
+    color: #f2f2f2;
+    font-size: 3vh;
+    margin: 3vh 2vw;
+    transition: color 0.5s;
+}
+#footer a:hover {
+    color: #e9931a;
+}
