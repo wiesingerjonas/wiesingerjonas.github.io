@@ -50,9 +50,12 @@ nav #navContent .navLinks:hover{
 }
 #home .content-align div{
     width: 39vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding-left: 3vw;
     padding-right: 3vw;
-    height: 30vh;
 }
 
 @media only screen and (max-aspect-ratio: 4/3) {
