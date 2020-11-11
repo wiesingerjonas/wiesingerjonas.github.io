@@ -146,3 +146,22 @@ nav #navContent p {
     margin-left: 10vw;
 }
 /*endregion*/
+
+#footer {
+    width: 100vw;
+    background: #111111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#footer a {
+    color: #f2f2f2;
+    font-size: 3vh;
+    margin: 3vh 5vw;
+    transition: color 0.5s;
+}
+#footer a:hover {
+    color: #e9931a;
+}
