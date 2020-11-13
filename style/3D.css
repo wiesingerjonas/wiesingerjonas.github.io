@@ -1,0 +1,37 @@
+#threeD {
+    padding: 5vh 0 0 5vw;
+}
+#threeD h1{
+    font-size: 7vh;
+    margin: 0;
+}
+#threeD p{
+    font-size: 3vh;
+    width: 80vw;
+}
+#threeD a{
+    color: #CCCCCC;
+}
+#threeD img{
+    width: 80vw;
+    margin-left: 5vw;
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    #threeD h1 {
+        font-size: 80px;
+    }
+    
+    #threeD p {
+        font-size: 50px;
+    }
+    
+    #threeD a {
+        color: #CCCCCC;
+    }
+    
+    #threeD img{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+}
