@@ -1,0 +1,26 @@
+footer {
+    width: 100vw;
+    margin-top: 5vh;
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+footer a {
+    margin: 2vw;
+    color: #f2f2f2;
+    font-size: 2vw;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: #e9931a;
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    footer a {
+        font-size: 5vw;
+        margin: 0 6vw;
+    }
+}
