@@ -1,4 +1,4 @@
-var imgLinks = [
+const imgLinks = [
     "https://www.instagram.com/jowies_photography/?hl=de",
     "https://www.instagram.com/p/BtYIfVmHXby/?utm_source=ig_web_copy_link",
     "https://www.instagram.com/p/BqPoxkaBkCz/?utm_source=ig_web_copy_link",
@@ -15,11 +15,11 @@ var imgLinks = [
     "https://www.instagram.com/jowies_photography/?hl=de"];
 
 window.addEventListener('load', () => {
-    let imgContainer = document.getElementById('imgContainer');
+    const imgContainer = document.getElementById('imgContainer');
 
     for (let i = imgLinks.length; i >= 1; i--) {
-        let img = document.createElement('img');
-        img.setAttribute('src', './media/photos/small/' + i + '.jpg');
+        const img = document.createElement('img');
+        img.setAttribute('src', `../media/photos/small/${i}.jpg`);
 
         imgContainer.appendChild(img);
     }
