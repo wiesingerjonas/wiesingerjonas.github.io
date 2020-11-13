@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: #191919;
+    overflow-x: hidden;
+    color: #f2f2f2;
+    font-family: Gill Sans Nova, Roboto, sans-serif;
+}
+
+.bg-black {
+    background: #111111 !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+img {
+    user-select: none;
+}
+
+.contentWrapper {
+    width: 90%;
+    padding: 0 5%;
+}
