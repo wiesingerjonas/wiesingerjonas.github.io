@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="./script/script.js"></script>
-    <script src="./script/mobileNav.js"></script>
-    <script src="./script/films.js"></script>
-    <script src="./script/images.js"></script>
-    <script src="./script/web.js"></script>
-    <link rel="stylesheet" href="./style/widescreenStyle.css" media="screen and (min-aspect-ratio: 1/1)">
-    <link rel="stylesheet" href="./style/mobileStyle.css" media="screen and (max-aspect-ratio: 1/1)">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset='UTF-8'>
+    <title>Jonas Wiesinger</title>
+    <script src='./script/nav.js'></script>
+    <link rel='stylesheet' href='./style/main.css'>
+    <link rel='stylesheet' href='./style/home.css'>
+    <link rel='stylesheet' href='./style/nav.css'>
+    <link rel='stylesheet' href='./style/footer.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
-    <nav id="nav">
-        <i id="navClose" class="fa fa-times"></i>
-        <div id="navContent">
-            <p class="navLinks" id="navHome">Home</p>
-            <p class="navLinks" id="navFilms">Film</p>
-            <p class="navLinks" id="navPhotos">Photo</p>
-            <p class="navLinks" id="navWeb">Web</p>
-            <p class="navLinks" id="nav3d">3D</p>
+    <nav id='nav' class='bg-black'>
+        <i id='navClose' class='fa fa-times'></i>
+        
+        <div id='navContent'>
+            <p class='navLink' data-link=''>Home</p>
+            <p class='navLink' data-link='film'>Film</p>
+            <p class='navLink' data-link='photo'>Photo</p>
+            <p class='navLink' data-link='web'>Web</p>
+            <p class='navLink' data-link='3D'>3D</p>
         </div>
     </nav>
 
-    <div id="burgerContainer">
-        <i id="burger" class="fa fa-bars"></i>
+    <div id='burgerContainer' class='bg-black'>
+        <i id='burger' class='fa fa-bars'></i>
     </div>
 
-    <div class="subDiv" id="home">
-        <img id="logo" src="./media/logo.png">
-        <p id="subHeader">Hi, my name is Jonas Wiesinger and I am currently studying at the HTL Leonding.<br>
+    <div class='contentWrapper' id='home'>
+        <img id='logo' src='./media/logo.png'>
+
+        <p id='subHeader'>Hi, my name is Jonas Wiesinger and I am currently studying at the HTL Leonding.<br>
             I am (very much) into filmmaking and I want to make it my profession.</p>
 
-        <div class="content-align">
-            <img src="./media/films/marabu_5.jpg">
+        <div class='content-align'>
+            <img src='./media/films/marabu_5.jpg'>
+            
             <div>
                 <p>I have experimented in lots of different fields like:</p>
 
@@ -53,53 +53,16 @@
                     but what I enjoy most is creating short films.</p>
             </div>
         </div>
-        <div class="content-align">
+
+        <div class='content-align'>
             <div>
                 <p>I love the creative process of turning a text-based script into a form of visual storytelling.</p>
                 <p>I love analysing movies, sometimes breaking them down frame by frame,
                     studying and trying to understand why the Director of Photography shot certain scenes the way he did.</p>
             </div>
-            <img src="./media/films/presspause_2.jpg">
+
+            <img src='./media/films/presspause_2.jpg'>
         </div>
-
-
-    </div>
-
-    <div class="subDiv" id="films">
-        <h1>Film</h1>
-        <!-- films sort
-        <div id="sortMethod">
-
-            <p id="sortMethodSelecter">Sort by <i class="fa fa-caret-down"></i></p>
-
-            <div id="dropdown">
-                <p>most popular</p>
-                <p>newest first</p>
-                <p>oldest first</p>
-            </div>
-
-        </div>
-        -->
-        <div id="imageContainer"></div>
-
-    </div>
-    <div id="filmDetail">
-    </div>
-
-    <div class="subDiv" id="photos">
-        <h1>Photos</h1>
-        <div id="imgContainer"></div>
-    </div>
-
-    <div class="subDiv" id="web">
-        <h1>Web</h1>
-    </div>
-
-    <div class="subDiv" id="threeD">
-        <h1>3D</h1>
-        <p>This is my first year learning 3d modelling in school and with my personal coach <a target="_blank" href="http://simon.edl.at/">Simon Edl</a>.</p>
-        <p>You'll see one example of my work below but soon there is more to come...</p>
-        <img src="./media/3d/stillleben.jpg">
     </div>
 
     <div id="footer">
