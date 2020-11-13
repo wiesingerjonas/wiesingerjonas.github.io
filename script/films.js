@@ -1,10 +1,7 @@
 window.addEventListener('load', () => {
-
-    let imageContainer = document.getElementById('imageContainer');
-    let filmDetail = document.getElementById('filmDetail');
-    let filmsDiv = document.getElementById('films');
-
-    let films = '{"films":[' +
+  const imageContainer = document.getElementById('imageContainer');
+  const filmDetail = document.getElementById('filmDetail');
+  const films = '{"films":[' +
         '{"title":"OK Center for Contemporary Art", "subtitle":"null", "year":"2015", ' +
         '"amountImg":"2", "iframeLink":"null", ' +
         '"secondLink":"null", "text":"Im Rahmen des Drehs eines Fernsehbeitrags von BildungsTV, ' +
@@ -108,140 +105,134 @@ window.addEventListener('load', () => {
         'mit dem sehr ambitionierten Team sehr lehrreich. Die Premiere wurde vorerst auf unbekannt verschoben.", ' +
         '"popularity":"4"}]}';
 
-    let filmsJson = JSON.parse(films);
+  const filmsJson = JSON.parse(films);
 
-    for (let i = filmsJson.films.length-1; i >= 0; i--) {
+  for (let i = filmsJson.films.length - 1; i >= 0; i--) {
+    const img = document.createElement('img');
 
-        let img = document.createElement('img');
+    const imgSrc = filmsJson.films[i].title
+      .replace(/\s/g, '')
+      .toLowerCase()
+      .replace(/[^a-zA-Z ]/g, '');
 
-        let imgSrc =  filmsJson.films[i].title
-            .replace(/\s/g, "")
-            .toLowerCase()
-            .replace(/[^a-zA-Z ]/g, "");
+    img.src = '../media/films/' + imgSrc + '.png';
+    imageContainer.appendChild(img);
 
-        img.src = './media/films/' + imgSrc + '.png';
-        imageContainer.appendChild(img);
+    img.addEventListener('click', () => {
+      deleteChildren(filmDetail);
 
-        img.addEventListener('click', () => {
-            deleteChildren(filmDetail);
+      filmDetail.classList.remove('hide');
+      imageContainer.classList.add('hide');
 
-            filmDetail.style.display = 'block';
-            filmsDiv.style.display = 'none';
+      const informationContainer = document.createElement('div');
+      informationContainer.setAttribute('id', 'informationContainer');
 
-            let film_alignLeft = document.createElement('div');
-            film_alignLeft.setAttribute('id', 'film_alignLeft');
+      const informationText = document.createElement('div');
+      informationText.setAttribute('id', 'informationText');
 
-            let film_alignRight = document.createElement('div');
-            film_alignRight.setAttribute('id', 'film_alignRight');
+      //region poster
+      const poster = document.createElement('img');
 
-            //region poster
-            let poster = document.createElement('img');
+      const posterSrc = filmsJson.films[i].title
+        .replace(/\s/g, '')
+        .toLowerCase()
+        .replace(/[^a-zA-Z ]/g, '');
 
-            let posterSrc =  filmsJson.films[i].title
-                .replace(/\s/g, "")
-                .toLowerCase()
-                .replace(/[^a-zA-Z ]/g, "");
+      poster.src = `../media/films/${posterSrc}.png`;
+      poster.setAttribute('id', 'poster');
 
-            poster.src = './media/films/' + posterSrc + '.png';
-            poster.setAttribute("id", "poster");
+      informationContainer.appendChild(poster);
 
-            film_alignLeft.appendChild(poster);
+      //endregion
 
-            filmDetail.appendChild(film_alignLeft);
-            //endregion
+      //region title
+      const title = document.createElement('h1');
+      title.textContent = filmsJson.films[i].title;
+      informationText.appendChild(title);
+      //endregion
 
-            //region title
-            let title = document.createElement('h1');
-            title.innerHTML = filmsJson.films[i].title;
-            film_alignRight.appendChild(title);
-            //endregion
+      //region subtitle
+      if (filmsJson.films[i].subtitle !== 'null') {
+        const subtitle = document.createElement('h2');
+        subtitle.textContent = filmsJson.films[i].subtitle;
+        informationText.appendChild(subtitle);
+      }
+      //endregion
 
-            //region subtitle
-            if(filmsJson.films[i].subtitle !== 'null') {
-                let subtitle = document.createElement('h2');
-                subtitle.innerHTML = filmsJson.films[i].subtitle;
-                film_alignRight.appendChild(subtitle);
-            }
-            //endregion
+      //region year
+      const year = document.createElement('p');
+      year.textContent = filmsJson.films[i].year;
+      year.setAttribute('id', 'year');
+      informationText.appendChild(year);
+      //endregion
 
-            //region year
-            let year = document.createElement('p');
-            year.innerHTML = filmsJson.films[i].year;
-            year.setAttribute('id','year');
-            film_alignRight.appendChild(year);
-            //endregion
+      //region text
+      if (filmsJson.films[i].text !== 'null') {
+        const text = document.createElement('p');
+        text.textContent = filmsJson.films[i].text;
+        informationText.appendChild(text);
+      }
+      //endregion
 
-            //region text
-            if(filmsJson.films[i].text !== 'null') {
-                let text = document.createElement('p');
-                text.innerHTML = filmsJson.films[i].text;
-                film_alignRight.appendChild(text);
-            }
-            //endregion
+      informationContainer.appendChild(informationText);
+      filmDetail.appendChild(informationContainer);
 
-            filmDetail.appendChild(film_alignRight);
+      //region iframe
+      if (filmsJson.films[i].iframeLink !== 'null') {
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('src', filmsJson.films[i].iframeLink);
 
-            //region iframe
-            if(filmsJson.films[i].iframeLink !== 'null') {
-                let iframe = document.createElement('iframe');
-                iframe.setAttribute('src', filmsJson.films[i].iframeLink);
+        const iframeContainer = document.createElement('div');
+        iframeContainer.setAttribute('id', 'iframeContainer');
 
-                let iframeContainer = document.createElement('div');
-                iframeContainer.setAttribute('id', 'iframeContainer');
+        iframeContainer.appendChild(iframe);
+        filmDetail.appendChild(iframeContainer);
+      }
+      //endregion
 
-                iframeContainer.appendChild(iframe);
-                filmDetail.appendChild(iframeContainer);
-            }
-            //endregion
+      //region secondLink
+      if (filmsJson.films[i].secondLink !== 'null') {
+        const linkInfo = document.createElement('p');
 
-            //region secondLink
-            if(filmsJson.films[i].secondLink !== 'null') {
+        linkInfo.innerHTML = filmsJson.films[i].secondLink.split(';')[0] + ': ';
 
-                let linkInfo = document.createElement('p');
+        const link = document.createElement('a');
 
-                linkInfo.innerHTML = filmsJson.films[i].secondLink.split(';')[0] + ': ';
+        link.setAttribute('href', filmsJson.films[i].secondLink.split(';')[1]);
 
-                let link = document.createElement('a');
+        link.innerHTML = filmsJson.films[i].secondLink.split(';')[1];
 
-                link.setAttribute('href', filmsJson.films[i].secondLink.split(';')[1]);
+        linkInfo.setAttribute('id', 'secondLink');
 
-                link.innerHTML = filmsJson.films[i].secondLink.split(';')[1];
+        linkInfo.appendChild(link);
 
-                linkInfo.setAttribute('id', 'secondLink');
+        filmDetail.appendChild(linkInfo);
+      }
+      //endregion
 
-                linkInfo.appendChild(link);
+      //region images
 
-                filmDetail.appendChild(linkInfo);
-            }
-            //endregion
+      const amountImg = filmsJson.films[i].amountImg;
+      const images = document.createElement('div');
 
-            //region images
+      images.setAttribute('id', 'images');
 
-            let amountImg = filmsJson.films[i].amountImg;
+      for (let j = 0; j < amountImg; j++) {
+        const img = document.createElement('img');
 
-            for (let j = 0; j < amountImg; j++) {
-                let img = document.createElement('img');
+        img.src = `../media/films/${posterSrc}_${j + 1}.jpg`;
 
-                img.src = './media/films/' + posterSrc + '_' + (j+1) + '.jpg';
+        images.appendChild(img);
+      }
 
-                if (amountImg <= 3) {
-                    img.style.width = 90/amountImg + 'vw';
-                } else if (amountImg <= 6) {
-                    img.style.width = 90/(amountImg-3) + 'vw';
-                }
+      filmDetail.appendChild(images);
+      //endregion
+    });
 
-                filmDetail.appendChild(img);
-            }
-            //endregion
-        });
-
-        function deleteChildren(parent) {
-            let child = parent.lastElementChild;
-            while (child) {
-                parent.removeChild(child);
-                child = parent.lastElementChild;
-            }
-        }
-
+    function deleteChildren(parent) {
+      while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+      }
     }
+  }
 });
