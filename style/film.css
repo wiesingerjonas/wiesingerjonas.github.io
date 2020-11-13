@@ -1,0 +1,170 @@
+#films h1 {
+  margin-left: 10.5vw;
+}
+
+#films #imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#imageContainer img {
+  width: 15vw;
+  margin: 2vh 0.5vw;
+  padding: 0;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#films #imageContainer img:hover {
+  filter: grayscale(0);
+}
+
+#filmDetail #informationContainer {
+  height: 45%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+#filmDetail #poster {
+  height: 50%;
+  margin-right: 5%;
+}
+
+#filmDetail #iframeContainer {
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+#filmDetail #iframeContainer iframe {
+  width: 55vw;
+  height: 30vw;
+  margin-bottom: 1vh;
+  border: none;
+}
+
+#filmDetail h1 {
+  font-size: 7vh;
+  margin: 1vh 0;
+}
+
+#filmDetail h2 {
+  font-size: 5vh;
+  margin: 1vh 0;
+}
+
+#filmDetail p {
+  font-size: 3vh;
+  margin: 1vh 0;
+}
+
+#filmDetail a {
+  color: #cccccc;
+}
+
+#filmDetail #year {
+  font-size: 5vh;
+}
+
+#filmDetail #secondLink {
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+#films #sortMethod {
+  width: 80vw;
+  margin-left: 10vw;
+  background-color: #111111;
+}
+
+#films #sortMethod #sortMethodSelecter {
+  font-size: 3vh;
+  padding: 0.5vh 1vw;
+  margin: 0;
+  min-width: 10%;
+  user-select: none;
+}
+
+#films #sortMethod #dropdown {
+  position: absolute;
+  min-width: 10%;
+  background-color: #111111;
+  padding: 0;
+  z-index: 100;
+}
+
+#films #sortMethod #dropdown p {
+  padding: 1vh 1vw;
+  margin: 0;
+  cursor: pointer;
+}
+
+#films #sortMethod #dropdown p:hover {
+  background-color: #2b2b2b;
+}
+
+#filmDetail #images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#filmDetail #images img {
+  width: 20vw;
+  margin: 0 2.5vw;
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+  #films #imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #films img {
+    width: 40vw;
+    margin: 1vh 0;
+    padding: 0;
+  }
+
+  #filmDetail #informationContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #filmDetail h1 {
+    font-size: 6vw;
+  }
+
+  #filmDetail h2, #filmDetail #year {
+    font-size: 5vw;
+  }
+
+  #filmDetail p {
+    font-size: 4vw;
+  }
+
+  #filmDetail #iframeContainer {
+    height: 45vw;
+    margin-bottom: 2.5vh;
+  }
+
+  #filmDetail #iframeContainer iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+
+  #filmDetail #images {
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #filmDetail #images img {
+    width: 80vw;
+    margin: 2.5vh 0;
+  }
+}
