@@ -76,9 +76,9 @@ window.addEventListener('load', () => {
 
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
-        '"secondLink":"null", "text":"Im August 2019 entstand wie auch in den Jahren davor ein Kurzfilm. ' +
-        'Dieses Filmprojekt war sehr aufregend für mich, da ich zum ersten Mal alleine hinter der Kamera stand. ' +
-        'Ich habe mich zur Vorbereitung dieses Projekts sehr viel mit Winkeln und Perspektiven beschäftigt."' +
+        '"secondLink":"null", "text":"As in previous years, the Medien Kultur Haus produced a short film in August 2019. ' +
+        'This film project was very exciting for me because it was my first time standing behind the camera alone. ' +
+        'In preparation for this project, I dealt a lot with angles and perspectives."' +
         ', "popularity":"8"},' +
 
         '{"title":"All About You", "subtitle":"Vicky - Music Video", "year":"2019", "amountImg":"3", ' +
