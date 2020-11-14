@@ -61,9 +61,9 @@ window.addEventListener('load', () => {
         '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
         '"secondLink":"Making of;https://www.youtube.com/watch?v=g_lMDYkMFGk", ' +
-        '"text":"Das dritte und somit letzte Projekt war ein Kurzfilm, welcher in der Zukunft in Wels spielt. ' +
-        'Ich habe für diesen Film sowohl bei der Kamera geholfen, ' +
-        'als auch den Dreh dokumentiert und in einem Making-of festgehalten.", ' +
+        '"text":"The third and last project organised by the Medien Kultur Haus in summer 2018 was a short film ' +
+        'that is set in Wels in the future. ' +
+        'I both assisted the camera department for this film and documented the shooting in a making-of.", ' +
         '"popularity":"7"},' +
 
         '{"title":"Christzilla", "subtitle":"Es kommt", "year":"2018", "amountImg":"0", ' +
