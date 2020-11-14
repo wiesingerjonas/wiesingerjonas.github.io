@@ -68,9 +68,10 @@ window.addEventListener('load', () => {
 
         '{"title":"Christzilla", "subtitle":"Es kommt", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/iV-OH5eTi0o", ' +
-        '"secondLink":"Episode #1;https://www.youtube.com/embed/h10DaiA51OY", "text":"Dieser satirische Filmtrailer ' +
-        'ist aus einer spontanen Idee entstanden und teasert einen Film an, in dem das überdimensionale Christkind ' +
-        'vom Welser Adventmarkt die Stadt angreift. Beim Dreh von Episode #1 war ich leider nicht beteiligt.", ' +
+        '"secondLink":"Episode #1;https://www.youtube.com/embed/h10DaiA51OY", "text":"This satirical film trailer ' +
+        'emerged from a spontaneous idea and teasers a film ' +
+        'in which the oversized angle statue from christkindlmarkt in Wels attacks the city. Unfortunately, ' +
+        'I was not involved in the shooting of episode # 1 due to schedule superposition.", ' +
         '"popularity":"12"},' +
 
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
