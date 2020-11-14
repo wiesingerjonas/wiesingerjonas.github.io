@@ -20,8 +20,8 @@ window.addEventListener('load', () => {
 
         '{"title":"Best Friend Forever Or Whatever", "subtitle":"null", "year":"2017", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/V_XP24q9Wp4", ' +
-        '"secondLink":"null", "text":"Auch im Jahr 2017 habe ich am Sommerprojekt des Medien Kultur Hauses teilgenommen. ' +
-        'Im Laufe dieses Projekts entstand der Kurzfilm Best Friend Forever Or Whatever.", ' +
+        '"secondLink":"null", "text":"In 2017 I also took part in the summer project of the Medien Kultur Haus. ' +
+        'In the course of this project, the short film Best Friend Forever Or Whatever was created.", ' +
         '"popularity":"11"},' +
 
         '{"title":"Foreverloops", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
