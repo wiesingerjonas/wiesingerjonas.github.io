@@ -52,10 +52,10 @@ window.addEventListener('load', () => {
 
         '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/0Vi-V9bhUTI", ' +
-        '"secondLink":"null", "text":"Das zweite Filmprojekt dieser Reihe war eine Mockumentary, ein fiktionaler Dokumentarfilm, ' +
-        'welcher Unwahrheiten für wahr verkauft. Wir haben für diesen Kurzfilm Super 8 Kameras verwendet, ' +
-        'um Videos aus der Vergangenheit zu fälschen bzw. nachzustellen. ' +
-        'Dieser Film wurde bei den Filmfestspielen Crossing Europe in Linz gezeigt.", ' +
+        '"secondLink":"null", "text":"The second film project in this series was a mockumentary, ' +
+        'a fictional documentary that sells falsehoods for true. ' +
+        'For this short film we used Super 8 cameras to forge or recreate videos from the past. ' +
+        'This film was shown at the Crossing Europe film festival in Linz.", ' +
         '"popularity":"6"},' +
 
         '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
