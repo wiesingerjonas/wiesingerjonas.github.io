@@ -26,12 +26,10 @@ window.addEventListener('load', () => {
 
         '{"title":"Foreverloops", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
         '"iframeLink":"https://player.vimeo.com/video/315526461", ' +
-        '"secondLink":"Making of;https://youtu.be/s22MuywfUxM", "text":"Dieser Werbespotdreh war für mich insofern etwas Besonderes, ' +
-        'da ich zum ersten Mal in meinem Leben bei einer professionellen Filmfirma, ' +
-        'mit dem Namen Las Gafas Films schnuppern durfte. ' +
-        'Ich habe für das Team den Dreh dokumentiert und in einem kurzen Making-of zusammengefasst. ' +
-        'Der Werbespot gewann bei den CANNES CORPORATE MEDIA & TV AWARDS ' +
-        'und im Film Forum Austria in der Kategorie TECHNOLOGIE FILM.", ' +
+        '"secondLink":"Making of;https://youtu.be/s22MuywfUxM", "text":"This commercial shoot was something special for me ' +
+        'because for the first time I got to see what it is like to be in a professional movie production team. ' +
+        'I documented the shoot for the austrian film company called Las Gafas Films and summarized it in a short making-of. ' +
+        'The commercial won the CANNES CORPORATE MEDIA & TV AWARDS and the Film Forum Austria in the TECHNOLOGY FILM category.", ' +
         '"popularity":"1"},' +
 
         '{"title":"Cats, Rats & Lovebirds", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
