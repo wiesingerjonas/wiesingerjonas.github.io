@@ -45,8 +45,9 @@ window.addEventListener('load', () => {
 
         '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/-uIngfORXfI", ' +
-        '"secondLink":"null", "text":"Wels, was wird? ist eine Dokumentation über die Zukunft der Stadt Wels. ' +
-        'Diese Dokumentation ist mit einem kleinen Team in Zusammenarbeit mit dem MedienKulturhaus Wels entstanden.", ' +
+        '"secondLink":"null", "text":"Wels, was wird? is a documentary about the future of the city of Wels. ' +
+        'This documentation was created with a small team in cooperation with the Medien Kultur Haus Wels. ' +
+        'For this project, we did a lot of interviews with politicians as well as people on the street.", ' +
         '"popularity":"2"},' +
 
         '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
