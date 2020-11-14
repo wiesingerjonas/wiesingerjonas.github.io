@@ -4,9 +4,9 @@ window.addEventListener('load', () => {
   const films = '{"films":[' +
         '{"title":"OK Center for Contemporary Art", "subtitle":"null", "year":"2015", ' +
         '"amountImg":"2", "iframeLink":"null", ' +
-        '"secondLink":"null", "text":"Im Rahmen des Drehs eines Fernsehbeitrags von BildungsTV, ' +
-        'durfte ich das Kamerateam einen Tag lang begleiten und durfte, da ich damals schon Kameramann werden wollte, ' +
-        'in diesen Beruf hineinschnuppern.", ' +
+        '"secondLink":"null", "text":"I was allowed to accompany the camera team of BildungsTV for a day and, ' +
+        'since I already wanted to become a camera operator at the time, ' +
+      'I was allowed to get a taste of this profession.", ' +
         '"popularity":"13"},' +
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
