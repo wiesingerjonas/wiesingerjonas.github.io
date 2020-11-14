@@ -83,10 +83,10 @@ window.addEventListener('load', () => {
 
         '{"title":"All About You", "subtitle":"Vicky - Music Video", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/eEItw8KVsPk", ' +
-        '"secondLink":"null", "text":"Im September 2019 wurde ich ' +
-        'von Vicky (Vicky Kren) zu einem spontanen Musikvideodreh  eingeladen. ' +
-        'Sowohl Vicky als auch ich selbst haben zuvor noch keine praktische Erfahrung in der Musikvideoproduktion. ' +
-        'Neben der Kamera habe ich auch den Zusammenschnitt der meist spontanen Shots übernommen.", "popularity":"10"},' +
+        '"secondLink":"null", "text":"In September 2019 I was invited by the austrian singer and songwriter ' +
+        'Vicky (Vicky Kren) to do a spontaneous music video shoot. ' +
+        'Neither Vicky nor myself have any previous hands-on experience in music video production. ' +
+        'In addition to the camera, I also did the editing of the mostly spontaneous shots.", "popularity":"10"},' +
 
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
