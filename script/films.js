@@ -91,9 +91,10 @@ window.addEventListener('load', () => {
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
         '"secondLink":"Behind the Scenes;https://www.youtube.com/watch?v=DvkAO1lEfFQ", ' +
-        '"text":"Im September wurde ich von den Musicalwaves Wels kontaktiert, ' +
-        'ob ich ihre Inszenierung vom bekannten Musical Der kleine Horrorladen aufnehmen könnte. ' +
-        'Ich habe ihnen neben den 2 Aufnahmen des gesamten Stücks auch ein Making of und einen Trailer gemacht.", ' +
+        '"text":"In September 2019 I was contacted by Musicalwaves Wels ' +
+        'whether I could record their staging of the Menken musical Der kleine Horrorladen. ' +
+        'In addition to the 2 recordings of the entire piece, ' +
+        'I also produced a behind the scenes documentation and a trailer for the production.", ' +
         '"popularity":"9"},' +
 
         '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
