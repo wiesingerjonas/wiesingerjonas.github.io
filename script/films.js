@@ -11,13 +11,11 @@ window.addEventListener('load', () => {
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/X2OR0cfNU-E", ' +
-        '"secondLink":"Making of;https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"Im Rahmen des Sommerprojekts, ' +
-        'einer jährlich stattfindenden Reihe von Workshops Rund ums Thema Film, ' +
-        'welche vom Medien Kultur Haus Wels initiiert wurden, habe ich das erste Mal 2016 teilgenommen.' +
-        'In einem 15-köpfigen Team haben wir in einer Woche einen Kurzfilm mit dem Titel En Croix erstellt. ' +
-        'In diesem Projekt haben Profis mit Amateuren oder Anfänger ihre Erfahrungen austauschen, ' +
-        'und ihr wissen weitergeben können. Ich habe bei diesem Filmdreh zum ersten Mal erfahren ' +
-        'wie es bei einem Kurzfilmdreh abläuft.", ' +
+        '"secondLink":"Making of;https://www.youtube.com/watch?v=VznsLLXwVf0", "text":"As part of the summer project, ' +
+        'an annual series of workshops, which are initiated by Medien Kultur Haus Wels, ' +
+        'I took part for the first time in 2016. In a team of 15 people we produced a short film with the title En Croix. ' +
+        'In this project, professionals exchanged their experiences and pass on their knowledge to amateurs or beginners. ' +
+        'It was during this film shoot that I found what is it like to produce movies.", ' +
         '"popularity":"3"},' +
 
         '{"title":"Best Friend Forever Or Whatever", "subtitle":"null", "year":"2017", "amountImg":"0", ' +
