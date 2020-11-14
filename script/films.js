@@ -34,11 +34,13 @@ window.addEventListener('load', () => {
 
         '{"title":"Cats, Rats & Lovebirds", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
         '"iframeLink":"http://player.vimeo.com/video/276199205", ' +
-        '"secondLink":"Making of;https://youtu.be/WHhRj5fAO40", "text":"Zum zweiten Mal wurde ich von den Las Gafas Films eingeladen, ' +
-        'sie auf einen Dreh zu begleiten. Im Rahmen des Wissenstransferzentrums West (WTZW) arbeitet ' +
-        'die Kunstuniversität Linz an neuen und alternativen Strategien für die Wissenschaftskommunikation. ' +
-        'Las Gafas Films durften das vierte und auch letzte Projekt dieser Reihe produzieren. ' +
-        'Cats, Rats & Lovebirds ist ein Kurzfilm der sich mit grundlegenden Aspekten der Siliziumphotonik befasst.", ' +
+        '"secondLink":"Making of;https://youtu.be/WHhRj5fAO40", "text":"For the second time ' +
+        'I was invited by Las Gafas Films to accompany them on a shoot. As part of the Wissenstransferzentrums West (WTZW), ' +
+        'the University of Arts Linz is working on new and alternative strategies for science communication. ' +
+        'Las Gafas Films was allowed to produce the fourth and final project in this series. ' +
+        'Cats, Rats & Lovebirds is a short film that deals with fundamental aspects of silicon photonics. ' +
+        'Besides producing a making of for the film crew, ' +
+        'I was helping them wherever I could including pushing the dolly.", ' +
         '"popularity":"5"},' +
 
         '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"0", ' +
