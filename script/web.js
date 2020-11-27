@@ -1,11 +1,12 @@
 window.addEventListener('load', () => {
   const web =
     '{"web":[' +
-    '{"title":"Vs Hart", "iframe":"null", "text":"I am currently working on a web project with two classmembers. We are renewing the Webpage of the Vs Hart."},' +
-    '{"title":"Theatermonitor", "iframe":"https://www.youtube.com/embed/4AfV2YXBmrg", "text":"I\'ve worked on this project for almost one year. It\'s a monitor, which theaters can use to give the audience information about the current play. In my case it is for the Musiktheater Linz."},' +
-    '{"title":"Htl Dir Av", "iframe":"https://htldirav.net/", "text":"null"},' +
-    '{"title":"Adventskalender", "iframe":"https://wiesingerjonas.github.io/adventskalender/", "text":"null"},' +
-    '{"title":"Fashionblog", "iframe":"https://wiesingerjonas.github.io/fashionblog/", "text":"This is a funny little project I made to make fun of the sometimes very difficult Captcha verifications."}]}';
+    '{"title":"HTBLA Leonie Landing Page", "iframe":"null", "pic":"landingpage.jpg", "text":"One of our most important subjects at school is project development. I am member of a project team, in which we are creating a voice assistant. Right now, my task is to renew the landing page of our Project, The Landing Page should give visitors general and technical information about our work."},' +
+    '{"title":"Vs Hart", "iframe":"null", "pic":"null", "text":"I am currently working on a web project with two classmembers. We are renewing the Webpage of the Vs Hart."},' +
+    '{"title":"Theatermonitor", "iframe":"https://www.youtube.com/embed/4AfV2YXBmrg", "pic":"null", "text":"I\'ve worked on this project for almost one year. It\'s a monitor, which theaters can use to give the audience information about the current play. In my case it is for the Musiktheater Linz."},' +
+    '{"title":"Htl Dir Av", "iframe":"https://htldirav.net/", "pic":"null", "text":"null"},' +
+    '{"title":"Adventskalender", "iframe":"https://wiesingerjonas.github.io/adventskalender/", "pic":"null", "text":"null"},' +
+    '{"title":"Fashionblog", "iframe":"https://wiesingerjonas.github.io/fashionblog/", "pic":"null", "text":"This is a funny little project I made to make fun of the sometimes very difficult Captcha verifications."}]}';
 
   const webJson = JSON.parse(web);
   const webDiv = document.getElementById('web');
@@ -31,6 +32,16 @@ window.addEventListener('load', () => {
       container.setAttribute('id', 'container');
       
       container.appendChild(iframe);
+      webDiv.appendChild(container);
+    }
+    if (webJson.web[i].pic !== 'null') {
+      const img = document.createElement('img');
+      img.setAttribute('src', "../media/web/" + webJson.web[i].pic);
+
+      const container = document.createElement('div');
+      container.setAttribute('id', 'container');
+
+      container.appendChild(img);
       webDiv.appendChild(container);
     }
 
