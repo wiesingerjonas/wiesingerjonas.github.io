@@ -105,14 +105,13 @@
 }
 
 #filmDetail #images {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #filmDetail #images img {
-  width: 20vw;
-  margin: 0 2.5vw;
+    width: 30vw;
 }
 
 @media only screen and (max-aspect-ratio: 1/1) {
