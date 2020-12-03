@@ -12,11 +12,15 @@
 #threeD a{
     color: #CCCCCC;
 }
-#threeD img{
-    width: 80vw;
+#threeD #wrapper{
     margin-left: 5vw;
 }
-
+#threeD #wrapper img:nth-child(3n-2) {
+    width: 80vw;
+}
+#threeD #wrapper img {
+    width: 40vw;
+}
 
 @media only screen and (max-aspect-ratio: 1/1) {
     #threeD h1 {
