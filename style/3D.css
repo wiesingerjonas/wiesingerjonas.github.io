@@ -17,6 +17,7 @@
     margin-left: 5vw;
 }
 
+
 @media only screen and (max-aspect-ratio: 1/1) {
     #threeD h1 {
         font-size: 80px;
