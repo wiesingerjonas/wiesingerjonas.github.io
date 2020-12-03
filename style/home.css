@@ -32,6 +32,14 @@
   font-size: 1.5vw;
 }
 
+#interview_iframe {
+  border: none;
+  overflow: hidden;
+  width: 60vw;
+  height: 40vw;
+  margin: 5vh 0 0 15vw;
+}
+
 @media only screen and (max-aspect-ratio: 1/1) {
   #home #logo {
     width: 30%;
