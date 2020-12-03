@@ -24,19 +24,18 @@
 
 @media only screen and (max-aspect-ratio: 1/1) {
     #threeD h1 {
-        font-size: 80px;
+        font-size: 50px;
     }
     
     #threeD p {
-        font-size: 50px;
+        font-size: 20px;
     }
     
     #threeD a {
         color: #CCCCCC;
     }
-    
-    #threeD img{
+
+    #threeD #wrapper img {
         width: 80vw;
-        margin-left: 10vw;
     }
 }
