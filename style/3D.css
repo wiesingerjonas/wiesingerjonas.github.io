@@ -34,6 +34,7 @@
     background-image: url("../media/3d/mute.jpg");
     background-size: 200% 100%;
     cursor: pointer;
+    border-radius: 100%;
 }
 .muted {
     background-position: -100%;
