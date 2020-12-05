@@ -6,6 +6,7 @@
     <title>3D</title>
     <link rel="icon" type="image/png" href="../media/icon.png">
     <script src='../script/nav.js'></script>
+    <script src='../script/threed.js'></script>
     <link rel='stylesheet' href='../style/main.css'>
     <link rel='stylesheet' href='../style/footer.css'>
     <link rel='stylesheet' href='../style/3D.css'>
@@ -39,10 +40,12 @@
             <img class="gallery" src='../media/3d/stillleben.jpg'>
             <img class="gallery" src="../media/3d/amongus.jpg">
             <img class="gallery" src="../media/3d/snow_globe.jpg">
-            <video class="gallery" autoplay loop muted>
-                <source src="../media/3d/soft.mp4" type="video/mp4">
-                <i id='muteSoft' class='fa fa-times'></i>
-            </video>
+            <div id="videowrapper" class="gallery">
+                <div id="buttonSoft"></div>
+                <video id="softVideo" autoplay loop muted>
+                    <source src="../media/3d/soft.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 
