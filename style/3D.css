@@ -15,10 +15,10 @@
 #threeD #wrapper{
     margin-left: 5vw;
 }
-#threeD #wrapper .gallery:nth-child(3n-2) {
+#threeD #wrapper .gallery {
     width: 80vw;
 }
-#threeD #wrapper .gallery {
+#threeD #wrapper .galleryhalf {
     width: 40vw;
 }
 #videowrapper video {
