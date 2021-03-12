@@ -108,9 +108,9 @@ window.addEventListener('load', () => {
         'The premiere has been postponed to unknown for the time being.", ' +
         '"popularity":"4"},' +
 
-        '{"title":"Studio 17 - 09.03.2021", "subtitle":"Johanna Dohnal und Feminismus Heute", "year":"2021", "amountImg":"0", ' +
+        '{"title":"Studio 17 - 09.03.2021", "subtitle":"Johanna Dohnal und Feminismus Heute", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/H0H-Z5g_rX0", ' +
-        '"secondLink":"null", ' +
+        '"secondLink":"Livestream;https://youtu.be/H0H-Z5g_rX0", ' +
         '"text":"This was a rather spontaneous shoot where I operated one and a half hour a gimbal ' +
         'in the awesome Set of Studio 17. The program is produced by the Medien Kultur Haus ' +
         'and is broadcasted live on YouTube and Dorf-TV. I was invited the day before the stream ' +
