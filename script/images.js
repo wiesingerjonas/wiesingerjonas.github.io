@@ -13,8 +13,8 @@ const imgLinks = [
     "https://www.instagram.com/jowies_photography/?hl=de",
     "https://www.instagram.com/jowies_photography/?hl=de",
     "https://www.instagram.com/jowies_photography/?hl=de",
-    "",
-    ""];
+    "a",
+    "a"];
 
 window.addEventListener('load', () => {
     const imgContainer = document.getElementById('imgContainer');
