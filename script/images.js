@@ -12,7 +12,9 @@ const imgLinks = [
     "https://bach-chor.com/medien/#post-216",
     "https://www.instagram.com/jowies_photography/?hl=de",
     "https://www.instagram.com/jowies_photography/?hl=de",
-    "https://www.instagram.com/jowies_photography/?hl=de"];
+    "https://www.instagram.com/jowies_photography/?hl=de",
+    "",
+    ""];
 
 window.addEventListener('load', () => {
     const imgContainer = document.getElementById('imgContainer');
