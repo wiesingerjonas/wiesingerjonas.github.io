@@ -24,3 +24,12 @@ img {
     width: 90%;
     padding: 0 5%;
 }
+::-moz-selection {
+    color: #ffffff;
+    background: #e9931a;
+}
+
+::selection {
+    color: #ffffff;
+    background: #e9931a;
+}
