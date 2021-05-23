@@ -115,7 +115,13 @@ window.addEventListener('load', () => {
         'in the awesome Set of Studio 17. The program is produced by the Medien Kultur Haus ' +
         'and is broadcasted live on YouTube and Dorf-TV. I was invited the day before the stream ' +
         'and I am happy and proud to call this my first participation in a livestream.", ' +
-        '"popularity":"14"}]}';
+        '"popularity":"14"},' +
+
+        '{"title":"Grieskirchner Bierstream", "subtitle":"True Studios", "year":"2021", "amountImg":"0", ' +
+        '"iframeLink":"https://player.vimeo.com/video/532175416?badge=0&autopause=0&player_id=0&app_id=58479", ' +
+        '"secondLink":"Making of;https://youtu.be/crggsquiZbw", ' +
+        '"text":"", ' +
+        '"popularity":"15"}]}';
 
   const filmsJson = JSON.parse(films);
 
