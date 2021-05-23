@@ -121,7 +121,13 @@ window.addEventListener('load', () => {
         '"iframeLink":"https://player.vimeo.com/video/532175416?badge=0&autopause=0&player_id=0&app_id=58479", ' +
         '"secondLink":"Making of;https://youtu.be/crggsquiZbw", ' +
         '"text":"", ' +
-        '"popularity":"15"}]}';
+        '"popularity":"15"},' +
+
+        '{"title":"Der Digitale Beichtstuhl", "subtitle":"Studio 17", "year":"2021", "amountImg":"0", ' +
+        '"iframeLink":"https://www.youtube.com/embed/CgVpGYhbdQw", ' +
+        '"secondLink":"null", ' +
+        '"text":"", ' +
+        '"popularity":"16"}]}';
 
   const filmsJson = JSON.parse(films);
 
