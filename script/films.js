@@ -127,7 +127,13 @@ window.addEventListener('load', () => {
         '"iframeLink":"https://www.youtube.com/embed/CgVpGYhbdQw", ' +
         '"secondLink":"null", ' +
         '"text":"", ' +
-        '"popularity":"16"}]}';
+        '"popularity":"16"},' +
+
+        '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"0", ' +
+        '"iframeLink":"https://www.youtube.com/embed/VlQnPPYssQE", ' +
+        '"secondLink":"null", ' +
+        '"text":"", ' +
+        '"popularity":"17"}]}';
 
   const filmsJson = JSON.parse(films);
 
