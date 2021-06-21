@@ -22,13 +22,16 @@
 #threeD #wrapper .gallery {
     width: 100%;
 }
+#threeD #wrapper iframe {
+    height: 45vw;
+}
 #threeD #wrapper .galleryhalf {
     width: 50%;
 }
-#videowrapper video {
+.videowrapper video {
     width: 100%;
 }
-#buttonSoft {
+#buttonSoft, #buttonCanon, #buttonNeon {
     width: 2.5vw;
     height: 2.5vw;
     margin: 1.25vw;
