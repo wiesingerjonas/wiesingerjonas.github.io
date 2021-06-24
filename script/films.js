@@ -120,23 +120,27 @@ window.addEventListener('load', () => {
         '{"title":"Grieskirchner Bierstream", "subtitle":"True Studios", "year":"2021", "amountImg":"0", ' +
         '"iframeLink":"https://player.vimeo.com/video/532175416?badge=0&autopause=0&player_id=0&app_id=58479", ' +
         '"secondLink":"Making of;https://youtu.be/crggsquiZbw", ' +
-        '"text":"", ' +
+        '"text":"In this stream, live from the Grieskirchner brewery, different types of beer are presented and tasted. ' +
+        'I was invited by the organizing company, true studios, to produce a making of. ' +
+        'It was a great experience to get to know all the people from this company and to get an insight into their workflow.", ' +
         '"popularity":"15"},' +
 
         '{"title":"Der Digitale Beichtstuhl", "subtitle":"Studio 17", "year":"2021", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/CgVpGYhbdQw", ' +
         '"secondLink":"null", ' +
-        '"text":"", ' +
+        '"text":"This livestream from Studio 17 is about an art project in Linz. ' +
+        'The world\'s first digital confessional is presented and seduced. ' +
+        'I was operating the B-Camera on a Gimbal.", ' +
         '"popularity":"16"},' +
 
         '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/VlQnPPYssQE", ' +
         '"secondLink":"All parts;https://youtube.com/playlist?list=PLRPEmPdeFNzp3BDC2U0QbnX-Fng6QglU6", ' +
         '"text":"The idea for the cultural dialogues comes from the city of Wels\' cultural development plan. ' +
-      'This includes the opportunity to offer cultural workers a regular dialogue format ' +
-      'in which cultural events in Wels can be discussed. Due to COVID-19, ' +
-      'the presence format had to be postponed several times, which is why they made a viral version in Studio17. ' +
-      'I was involved in all 4 Parts as the main camera operator.", ' +
+        'This includes the opportunity to offer cultural workers a regular dialogue format ' +
+        'in which cultural events in Wels can be discussed. Due to COVID-19, ' +
+        'the presence format had to be postponed several times, which is why they made a viral version in Studio17. ' +
+        'I was involved in all 4 Parts as the main camera operator.", ' +
         '"popularity":"17"}]}';
 
   const filmsJson = JSON.parse(films);
