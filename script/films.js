@@ -131,7 +131,7 @@ window.addEventListener('load', () => {
 
         '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/VlQnPPYssQE", ' +
-        '"secondLink":"null", ' +
+        '"secondLink":"All parts;https://youtube.com/playlist?list=PLRPEmPdeFNzp3BDC2U0QbnX-Fng6QglU6", ' +
         '"text":"The idea for the cultural dialogues comes from the city of Wels\' cultural development plan. ' +
       'This includes the opportunity to offer cultural workers a regular dialogue format ' +
       'in which cultural events in Wels can be discussed. Due to COVID-19, ' +
