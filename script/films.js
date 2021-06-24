@@ -132,7 +132,11 @@ window.addEventListener('load', () => {
         '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/VlQnPPYssQE", ' +
         '"secondLink":"null", ' +
-        '"text":"", ' +
+        '"text":"The idea for the cultural dialogues comes from the city of Wels\' cultural development plan. ' +
+      'This includes the opportunity to offer cultural workers a regular dialogue format ' +
+      'in which cultural events in Wels can be discussed. Due to COVID-19, ' +
+      'the presence format had to be postponed several times, which is why they made a viral version in Studio17. ' +
+      'I was involved in all 4 Parts as the main camera operator.", ' +
         '"popularity":"17"}]}';
 
   const filmsJson = JSON.parse(films);
