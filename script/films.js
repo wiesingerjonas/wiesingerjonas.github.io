@@ -129,7 +129,7 @@ window.addEventListener('load', () => {
         '"text":"", ' +
         '"popularity":"16"},' +
 
-        '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"0", ' +
+        '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/VlQnPPYssQE", ' +
         '"secondLink":"null", ' +
         '"text":"", ' +
