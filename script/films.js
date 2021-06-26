@@ -1,13 +1,20 @@
 window.addEventListener('load', () => {
   const imageContainer = document.getElementById('imageContainer');
   const filmDetail = document.getElementById('filmDetail');
+
+  const filmCategoriesObjects = document.getElementsByClassName('filmCategoriesObject');
+
+  const categories = ["documentary", "livestream", "musicvideo", "shortfilm", "concert", "advertisement"]
+  let active = "";
+
+  //region data
   const films = '{"films":[' +
         '{"title":"OK Center for Contemporary Art", "subtitle":"null", "year":"2015", ' +
         '"amountImg":"2", "iframeLink":"null", ' +
         '"secondLink":"null", "text":"I was allowed to accompany the camera team of BildungsTV for a day and, ' +
         'since I already wanted to become a camera operator at the time, ' +
         'I was allowed to get a taste of this profession.", ' +
-        '"popularity":"13"},' +
+        '"popularity":"13", "category":"documentary"},' +
 
         '{"title":"En Croix", "subtitle":"null", "year":"2016", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/X2OR0cfNU-E", ' +
@@ -16,13 +23,13 @@ window.addEventListener('load', () => {
         'I took part for the first time in 2016. In a team of 15 people we produced a short film with the title En Croix. ' +
         'In this project, professionals exchanged their experiences and pass on their knowledge to amateurs or beginners. ' +
         'It was during this film shoot that I found what is it like to produce movies.", ' +
-        '"popularity":"3"},' +
+        '"popularity":"3", "category":"shortfilm"},' +
 
         '{"title":"Best Friend Forever Or Whatever", "subtitle":"null", "year":"2017", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/V_XP24q9Wp4", ' +
         '"secondLink":"null", "text":"In 2017 I also took part in the summer project of the Medien Kultur Haus. ' +
         'In the course of this project, the short film Best Friend Forever Or Whatever was created.", ' +
-        '"popularity":"11"},' +
+        '"popularity":"11", "category":"shortfilm"},' +
 
         '{"title":"Foreverloops", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
         '"iframeLink":"https://player.vimeo.com/video/315526461", ' +
@@ -30,7 +37,7 @@ window.addEventListener('load', () => {
         'because for the first time I got to see what it is like to be in a professional movie production team. ' +
         'I documented the shoot for the austrian film company called Las Gafas Films and summarized it in a short making-of. ' +
         'The commercial won the CANNES CORPORATE MEDIA & TV AWARDS and the Film Forum Austria in the TECHNOLOGY FILM category.", ' +
-        '"popularity":"1"},' +
+        '"popularity":"1", "category":"advertisement"},' +
 
         '{"title":"Cats, Rats & Lovebirds", "subtitle":"Las Gafas Films", "year":"2018", "amountImg":"3", ' +
         '"iframeLink":"https://player.vimeo.com/video/276199205", ' +
@@ -41,14 +48,14 @@ window.addEventListener('load', () => {
         'Cats, Rats & Lovebirds is a short film that deals with fundamental aspects of silicon photonics. ' +
         'Besides producing a making of for the film crew, ' +
         'I was helping them wherever I could including pushing the dolly.", ' +
-        '"popularity":"5"},' +
+        '"popularity":"5", "category":"shortfilm"},' +
 
         '{"title":"Wels, was wird?", "subtitle":"null", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/-uIngfORXfI", ' +
         '"secondLink":"null", "text":"Wels, was wird? is a documentary about the future of the city of Wels. ' +
         'This documentation was created with a small team in cooperation with the Medien Kultur Haus Wels. ' +
         'For this project, we did a lot of interviews with politicians as well as people on the street.", ' +
-        '"popularity":"2"},' +
+        '"popularity":"2", "category":"documentary"},' +
 
         '{"title":"Am eigenen Leibe", "subtitle":"Die Experimente des Dr. Zasch", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/0Vi-V9bhUTI", ' +
@@ -56,7 +63,7 @@ window.addEventListener('load', () => {
         'a fictional documentary that sells falsehoods for true. ' +
         'For this short film we used Super 8 cameras to forge or recreate videos from the past. ' +
         'This film was shown at the Crossing Europe film festival in Linz.", ' +
-        '"popularity":"6"},' +
+        '"popularity":"6", "category":"documentary"},' +
 
         '{"title":"48 Jahre später", "subtitle":"null", "year":"2018", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/LTw1zWqgQFY", ' +
@@ -64,7 +71,7 @@ window.addEventListener('load', () => {
         '"text":"The third and last project organised by the Medien Kultur Haus in summer 2018 was a short film ' +
         'that is set in Wels in the future. ' +
         'I both assisted the camera department for this film and documented the shooting in a making-of.", ' +
-        '"popularity":"7"},' +
+        '"popularity":"7", "category":"shortfilm"},' +
 
         '{"title":"Christzilla", "subtitle":"Es kommt", "year":"2018", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/iV-OH5eTi0o", ' +
@@ -72,21 +79,22 @@ window.addEventListener('load', () => {
         'emerged from a spontaneous idea and teasers a film ' +
         'in which the oversized angle statue from christkindlmarkt in Wels attacks the city. Unfortunately, ' +
         'I was not involved in the shooting of episode # 1 due to schedule superposition.", ' +
-        '"popularity":"12"},' +
+        '"popularity":"12", "category":"shortfilm"},' +
 
         '{"title":"Press Pause", "subtitle":"null", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/XXHj03gttl4", ' +
         '"secondLink":"null", "text":"As in previous years, the Medien Kultur Haus produced a short film in August 2019. ' +
         'This film project was very exciting for me because it was my first time standing behind the camera alone. ' +
         'In preparation for this project, I dealt a lot with angles and perspectives."' +
-        ', "popularity":"8"},' +
+        ', "popularity":"8", "category":"shortfilm"},' +
 
         '{"title":"All About You", "subtitle":"Vicky - Music Video", "year":"2019", "amountImg":"3", ' +
         '"iframeLink":"https://www.youtube.com/embed/eEItw8KVsPk", ' +
         '"secondLink":"null", "text":"In September 2019 I was invited by the austrian singer and songwriter ' +
         'Vicky (Vicky Kren) to do a spontaneous music video shoot. ' +
         'Neither Vicky nor myself have any previous hands-on experience in music video production. ' +
-        'In addition to the camera, I also did the editing of the mostly spontaneous shots.", "popularity":"10"},' +
+        'In addition to the camera, I also did the editing of the mostly spontaneous shots.", "popularity":"10", ' +
+        '"category":"musicvideo"},' +
 
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
@@ -95,7 +103,7 @@ window.addEventListener('load', () => {
         'whether I could record their staging of the Menken musical Der kleine Horrorladen. ' +
         'In addition to the 2 recordings of the entire piece, ' +
         'I also produced a behind the scenes documentation and a trailer for the production.", ' +
-        '"popularity":"9"},' +
+        '"popularity":"9", "category":"concert"},' +
 
         '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
         '"iframeLink":"null", ' +
@@ -106,7 +114,7 @@ window.addEventListener('load', () => {
         'Despite many aggravating reasons (big amount of zoo visitors, corona measures), ' +
         'the shoot with the very ambitious team was very instructive. ' +
         'The premiere has been postponed to unknown for the time being.", ' +
-        '"popularity":"4"},' +
+        '"popularity":"4", "category":"shortfilm"},' +
 
         '{"title":"Studio 17 - 09.03.2021", "subtitle":"Johanna Dohnal und Feminismus Heute", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/H0H-Z5g_rX0", ' +
@@ -115,7 +123,7 @@ window.addEventListener('load', () => {
         'in the awesome Set of Studio 17. The program is produced by the Medien Kultur Haus ' +
         'and is broadcasted live on YouTube and Dorf-TV. I was invited the day before the stream ' +
         'and I am happy and proud to call this my first participation in a livestream.", ' +
-        '"popularity":"14"},' +
+        '"popularity":"14", "category":"livestream"},' +
 
         '{"title":"Grieskirchner Bierstream", "subtitle":"True Studios", "year":"2021", "amountImg":"0", ' +
         '"iframeLink":"https://player.vimeo.com/video/532175416?badge=0&autopause=0&player_id=0&app_id=58479", ' +
@@ -123,7 +131,7 @@ window.addEventListener('load', () => {
         '"text":"In this stream, live from the Grieskirchner brewery, different types of beer are presented and tasted. ' +
         'I was invited by the organizing company, true studios, to produce a making of. ' +
         'It was a great experience to get to know all the people from this company and to get an insight into their workflow.", ' +
-        '"popularity":"15"},' +
+        '"popularity":"15", "category":"livestream"},' +
 
         '{"title":"Der Digitale Beichtstuhl", "subtitle":"Studio 17", "year":"2021", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/CgVpGYhbdQw", ' +
@@ -131,7 +139,7 @@ window.addEventListener('load', () => {
         '"text":"This livestream from Studio 17 is about an art project in Linz. ' +
         'The world\'s first digital confessional is presented and seduced. ' +
         'I was operating the B-Camera on a Gimbal.", ' +
-        '"popularity":"16"},' +
+        '"popularity":"16", "category":"livestream"},' +
 
         '{"title":"Kulturdialoge", "subtitle":"Studio 17", "year":"2021", "amountImg":"2", ' +
         '"iframeLink":"https://www.youtube.com/embed/VlQnPPYssQE", ' +
@@ -141,12 +149,13 @@ window.addEventListener('load', () => {
         'in which cultural events in Wels can be discussed. Due to COVID-19, ' +
         'the presence format had to be postponed several times, which is why they made a viral version in Studio17. ' +
         'I was involved in all 4 Parts as the main camera operator.", ' +
-        '"popularity":"17"}]}';
+        '"popularity":"17", "category":"livestream"}]}';
+  //endregion
 
   const filmsJson = JSON.parse(films);
-
   for (let i = filmsJson.films.length - 1; i >= 0; i--) {
     const img = document.createElement('img');
+    img.className = filmsJson.films[i].category;
 
     const imgSrc = filmsJson.films[i].title
       .replace(/\s/g, '')
@@ -154,6 +163,7 @@ window.addEventListener('load', () => {
       .replace(/[^a-zA-Z ]/g, '');
 
     img.src = '../media/films/' + imgSrc + '.png';
+
     imageContainer.appendChild(img);
 
     img.addEventListener('click', () => {
@@ -272,5 +282,34 @@ window.addEventListener('load', () => {
         parent.removeChild(parent.firstChild);
       }
     }
+  }
+
+  for (let i = 0; i < filmCategoriesObjects.length; i++) {
+    filmCategoriesObjects.item(i).addEventListener("click", () => {
+      if(active !== filmCategoriesObjects.item(i).id) {
+        active = filmCategoriesObjects.item(i).id;
+        for (let j = 0; j < categories.length; j++) {
+          if (categories[j] !== filmCategoriesObjects.item(i).id) {
+            let elm = document.getElementsByClassName(categories[j]);
+            for (let k = 0; k < elm.length; k++) {
+              elm[k].style.display = "none";
+            }
+          } else {
+            let elm = document.getElementsByClassName(categories[j]);
+            for (let k = 0; k < elm.length; k++) {
+              elm[k].style.display = "block";
+            }
+          }
+        }
+      } else {
+        active = "";
+        for (let j = 0; j < categories.length; j++) {
+          let elm = document.getElementsByClassName(categories[j]);
+          for (let k = 0; k < elm.length; k++) {
+            elm[k].style.display = "block";
+          }
+        }
+      }
+    });
   }
 });

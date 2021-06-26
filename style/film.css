@@ -114,6 +114,24 @@
     width: 30vw;
 }
 
+#filmCategories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#filmCategories p {
+  text-transform: uppercase;
+  width: 16.66666%;
+  padding: 10px 0;
+  background-color: #212121;
+  text-align: center;
+  font-size: 2vh;
+  cursor: pointer;
+}
+#filmCategories p:hover {
+  background-color: #313131;
+}
 @media only screen and (max-aspect-ratio: 1/1) {
   #films #imageContainer {
     display: flex;
