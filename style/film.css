@@ -180,4 +180,8 @@
     width: 80vw;
     margin: 2.5vh 0;
   }
+
+  #filmCategories {
+    display: none;
+  }
 }
