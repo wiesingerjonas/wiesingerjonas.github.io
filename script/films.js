@@ -167,6 +167,9 @@ window.addEventListener('load', () => {
     imageContainer.appendChild(img);
 
     img.addEventListener('click', () => {
+
+      document.getElementById("filmCategories").style.display = "none";
+
       deleteChildren(filmDetail);
 
       filmDetail.classList.remove('hide');
