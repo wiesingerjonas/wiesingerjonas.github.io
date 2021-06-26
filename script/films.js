@@ -287,9 +287,11 @@ window.addEventListener('load', () => {
   for (let i = 0; i < filmCategoriesObjects.length; i++) {
     filmCategoriesObjects.item(i).addEventListener("click", () => {
       if(active !== filmCategoriesObjects.item(i).id) {
+        document.getElementById(filmCategoriesObjects.item(i).id).style.backgroundColor = "#292929"
         active = filmCategoriesObjects.item(i).id;
         for (let j = 0; j < categories.length; j++) {
           if (categories[j] !== filmCategoriesObjects.item(i).id) {
+            document.getElementById(categories[j]).style.backgroundColor = "#212121"
             let elm = document.getElementsByClassName(categories[j]);
             for (let k = 0; k < elm.length; k++) {
               elm[k].style.display = "none";
@@ -304,6 +306,7 @@ window.addEventListener('load', () => {
       } else {
         active = "";
         for (let j = 0; j < categories.length; j++) {
+          document.getElementById(categories[j]).style.backgroundColor = "#212121"
           let elm = document.getElementsByClassName(categories[j]);
           for (let k = 0; k < elm.length; k++) {
             elm[k].style.display = "block";
