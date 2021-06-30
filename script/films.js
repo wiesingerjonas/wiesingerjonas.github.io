@@ -168,6 +168,8 @@ window.addEventListener('load', () => {
 
     img.addEventListener('click', () => {
 
+      window.scrollTo(0, 0);
+
       document.getElementById("filmCategories").classList.add('hide');
 
       deleteChildren(filmDetail);
