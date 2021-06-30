@@ -176,7 +176,7 @@ window.addEventListener('load', () => {
       imageContainer.classList.add('hide');
       document.getElementById('FilmTitleHeader').classList.add('hide');
 
-      const backButton = document.createElement('h1');
+      const backButton = document.createElement('p');
       backButton.textContent = "Back";
       backButton.setAttribute('id', 'backButton');
 

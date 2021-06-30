@@ -132,6 +132,18 @@
 #filmCategories p:hover {
   background-color: #313131;
 }
+
+#backButton {
+  font-size: 3vh !important;
+  margin: 1vh 0 2vh 0 !important;
+  text-transform: uppercase;
+  background-color: #313131;
+  padding: .5% 1%;
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @media only screen and (max-aspect-ratio: 1/1) {
   #films #imageContainer {
     display: flex;
