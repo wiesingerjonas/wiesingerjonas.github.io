@@ -196,4 +196,7 @@
   #filmCategories {
     display: none;
   }
+  #backButton {
+    float: right;
+  }
 }
