@@ -168,12 +168,26 @@ window.addEventListener('load', () => {
 
     img.addEventListener('click', () => {
 
-      document.getElementById("filmCategories").style.display = "none";
+      document.getElementById("filmCategories").classList.add('hide');
 
       deleteChildren(filmDetail);
 
       filmDetail.classList.remove('hide');
       imageContainer.classList.add('hide');
+      document.getElementById('FilmTitleHeader').classList.add('hide');
+
+      const backButton = document.createElement('h1');
+      backButton.textContent = "Back";
+      backButton.setAttribute('id', 'backButton');
+
+      backButton.addEventListener('click', () => {
+        document.getElementById("filmCategories").classList.remove('hide')
+        filmDetail.classList.add('hide');
+        imageContainer.classList.remove('hide');
+        document.getElementById('FilmTitleHeader').classList.remove('hide');
+      })
+
+      filmDetail.appendChild(backButton);
 
       const informationContainer = document.createElement('div');
       informationContainer.setAttribute('id', 'informationContainer');
@@ -318,4 +332,5 @@ window.addEventListener('load', () => {
       }
     });
   }
+
 });
