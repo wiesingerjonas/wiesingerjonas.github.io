@@ -14,6 +14,9 @@ const imgLinks = [
     "https://www.instagram.com/jowies_photography/?hl=de",
     "https://www.instagram.com/jowies_photography/?hl=de",
     "a",
+    "a",
+    "a",
+    "a",
     "a"];
 
 window.addEventListener('load', () => {
