@@ -106,14 +106,13 @@ window.addEventListener('load', () => {
         '"popularity":"9", "category":"concert"},' +
 
         '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
-        '"iframeLink":"null", ' +
+        '"iframeLink":"https://www.youtube.com/embed/I7pqutjpLHg", ' +
         '"secondLink":"null", ' +
         '"text":"In summer of 2020, the summer project of the Medien Kultur Haus took place ' +
         'even though there was a global pandemic going on. ' +
         'This year we decided to do a coming-of-age story about 2 sisters who spend a day in the local zoo. ' +
         'Despite many aggravating reasons (big amount of zoo visitors, corona measures), ' +
-        'the shoot with the very ambitious team was very instructive. ' +
-        'The premiere has been postponed to unknown for the time being.", ' +
+        'the shoot with the very ambitious team was very instructive.", ' +
         '"popularity":"4", "category":"shortfilm"},' +
 
         '{"title":"Studio 17 - 09.03.2021", "subtitle":"Johanna Dohnal und Feminismus Heute", "year":"2021", "amountImg":"2", ' +
