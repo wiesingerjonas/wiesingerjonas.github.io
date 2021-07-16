@@ -98,7 +98,7 @@ window.addEventListener('load', () => {
 
         '{"title":"Kleiner Horrorladen", "subtitle":"Musicalwaves Wels", "year":"2019", "amountImg":"1", ' +
         '"iframeLink":"https://www.youtube.com/embed/yY1kfpJRLaw", ' +
-        '"secondLink":"Behind the Scenes;https://www.youtube.com/watch?v=DvkAO1lEfFQ", ' +
+        '"secondLink":"Behind the Scenes;https://youtu.be/DvkAO1lEfFQ", ' +
         '"text":"In September 2019 I was contacted by Musicalwaves Wels ' +
         'whether I could record their staging of the Menken musical Der kleine Horrorladen. ' +
         'In addition to the 2 recordings of the entire piece, ' +
@@ -107,7 +107,7 @@ window.addEventListener('load', () => {
 
         '{"title":"Marabu", "subtitle":"null", "year":"2020", "amountImg":"6", ' +
         '"iframeLink":"https://www.youtube.com/embed/I7pqutjpLHg", ' +
-        '"secondLink":"null", ' +
+        '"secondLink":"Making of;https://youtu.be/IKagspH5mf8", ' +
         '"text":"In summer of 2020, the summer project of the Medien Kultur Haus took place ' +
         'even though there was a global pandemic going on. ' +
         'This year we decided to do a coming-of-age story about 2 sisters who spend a day in the local zoo. ' +
