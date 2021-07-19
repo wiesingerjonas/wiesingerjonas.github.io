@@ -148,7 +148,13 @@ window.addEventListener('load', () => {
         'in which cultural events in Wels can be discussed. Due to COVID-19, ' +
         'the presence format had to be postponed several times, which is why they made a viral version in Studio17. ' +
         'I was involved in all 4 Parts as the main camera operator.", ' +
-        '"popularity":"17", "category":"livestream"}]}';
+        '"popularity":"17", "category":"livestream"},' +
+
+        '{"title":"Wels-Song", "subtitle":"true-studios", "year":"2021", "amountImg":"0", ' +
+        '"iframeLink":"https://www.youtube.com/embed/TMyhcndmOko", ' +
+        '"secondLink":"null", ' +
+        '"text":"", ' +
+        '"popularity":"17", "category":"musicvideo"}]}';
   //endregion
 
   const filmsJson = JSON.parse(films);
