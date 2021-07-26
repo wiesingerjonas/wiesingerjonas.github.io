@@ -45,7 +45,7 @@ h1 {
   font-size: 8vh;
   margin: .5vh 0;
 }
-h2 {
+h2, h3 {
   margin-bottom: 0;
 }
 @media only screen and (max-aspect-ratio: 1/1) {
