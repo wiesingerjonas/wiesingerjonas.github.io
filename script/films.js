@@ -342,5 +342,4 @@ window.addEventListener('load', () => {
       }
     });
   }
-
 });

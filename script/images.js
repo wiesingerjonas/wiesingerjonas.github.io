@@ -81,4 +81,20 @@ window.addEventListener('load', () => {
         }
         fullScreenImgDisplay.setAttribute('src', `../media/photos/small/${nextNumber}.jpg`);
     });
+
+    document.onkeydown = checkKey;
+
+    function checkKey(e) {
+        e = e || window.event;
+
+        if (e.keyCode == '37') {
+            arrowLeft.click();
+        }
+        if (e.keyCode == '39') {
+            arrowRight.click();
+        }
+        if (e.keyCode == '27') {
+            fullScreenImgClose.click();
+        }
+    }
 });
