@@ -1,4 +1,4 @@
-var scrollDistance;
+let scrollDistance;
 
 window.addEventListener('load', () => {
   const imageContainer = document.getElementById('imageContainer');

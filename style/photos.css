@@ -28,6 +28,19 @@
   display: none;
   cursor: pointer;
 }
+#arrowLeft, #arrowRight {
+  display: none;
+  font-size: 2vw;
+  position: absolute;
+  top:50%;
+}
+
+#arrowLeft {
+  left: 4vw;
+}
+#arrowRight {
+  left: 94vw;
+}
 @media only screen and (max-aspect-ratio: 4/3) {
   #photos #imgContainer img {
     width: 45vw;
