@@ -1,4 +1,5 @@
 const amountImages = 43;
+var scrollDistance;
 
 window.addEventListener('load', () => {
     const imgContainer = document.getElementById('imgContainer');
@@ -22,6 +23,7 @@ window.addEventListener('load', () => {
             && !navigator.userAgent.match(/Windows Phone/i)){
 
             img.addEventListener('click', () => {
+                scrollDistance = window.scrollY
                 fullScreenContainer.style.display = 'flex';
                 imgContainer.style.display = "none";
                 header.style.display = 'none';
@@ -43,5 +45,7 @@ window.addEventListener('load', () => {
         nav.style.display = 'block';
         footer.style.display = 'block';
         fullScreenImgClose.style.display = 'none';
+
+        window.scrollTo(0, scrollDistance)
     });
 });
