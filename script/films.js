@@ -154,8 +154,8 @@ window.addEventListener('load', () => {
 
         '{"title":"Wels-Song", "subtitle":"true-studios", "year":"2021", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/TMyhcndmOko", ' +
-        '"secondLink":"null", ' +
-        '"text":"", ' +
+        '"secondLink":"Making of - Studio Recording;https://youtu.be/oMFJ6-D15yQ", ' +
+        '"text":"The upper-austrian media company true-studios was producing this video during my internship at their business. I shot a few pictures which got featured for like 2 seconds and I was involved in the postproduction process. Furthermore I have produced two making ofs for true-studios. One which documents the studio recording and one wich documents the whole process of produciton.", ' +
         '"popularity":"17", "category":"musicvideo"}]}';
   //endregion
 
