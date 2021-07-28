@@ -1,3 +1,5 @@
+var scrollDistance;
+
 window.addEventListener('load', () => {
   const imageContainer = document.getElementById('imageContainer');
   const filmDetail = document.getElementById('filmDetail');
@@ -172,7 +174,7 @@ window.addEventListener('load', () => {
     imageContainer.appendChild(img);
 
     img.addEventListener('click', () => {
-
+      scrollDistance = window.scrollY;
       window.scrollTo(0, 0);
 
       document.getElementById("filmCategories").classList.add('hide');
@@ -188,6 +190,7 @@ window.addEventListener('load', () => {
       backButton.setAttribute('id', 'backButton');
 
       backButton.addEventListener('click', () => {
+        window.scrollTo(0, scrollDistance);
         document.getElementById("filmCategories").classList.remove('hide')
         filmDetail.classList.add('hide');
         imageContainer.classList.remove('hide');
