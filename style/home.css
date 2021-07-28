@@ -32,6 +32,13 @@
   font-size: 1.5vw;
 }
 
+#home .content-align div a {
+  color: #f2f2f2;
+}
+#home .content-align div a {
+  color: #f2f2f2;
+  margin-left: 2%;
+}
 #interview_iframe {
   border: none;
   overflow: hidden;
