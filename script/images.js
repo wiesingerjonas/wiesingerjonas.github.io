@@ -1,4 +1,4 @@
-const amountImages = 31;
+const amountImages = 43;
 
 window.addEventListener('load', () => {
     const imgContainer = document.getElementById('imgContainer');
