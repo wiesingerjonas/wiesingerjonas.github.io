@@ -3,7 +3,6 @@ window.addEventListener('load', () => {
     let softVideo = document.getElementById('softVideo');
 
     softVideo.addEventListener('click', () => {
-        console.log("zeas");
         softVideo.muted = !softVideo.muted;
 
         if (buttonSoft.classList.length === 0){
