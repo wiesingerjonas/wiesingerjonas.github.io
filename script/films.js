@@ -171,6 +171,9 @@ window.addEventListener('load', () => {
 
     img.src = '../media/films/' + imgSrc + '.png';
 
+    img.alt = "Poster: " + filmsJson.films[i].title;
+    img.title = filmsJson.films[i].title;
+
     imageContainer.appendChild(img);
 
     img.addEventListener('click', () => {
@@ -215,7 +218,8 @@ window.addEventListener('load', () => {
 
       poster.src = `../media/films/${posterSrc}.png`;
       poster.setAttribute('id', 'poster');
-
+      poster.alt = "poster:" + filmsJson.films[i].title;
+      poster.title = filmsJson.films[i].title;
       informationContainer.appendChild(poster);
 
       //endregion
@@ -296,6 +300,8 @@ window.addEventListener('load', () => {
         const img = document.createElement('img');
 
         img.src = `../media/films/${posterSrc}_${j + 1}.jpg`;
+        img.alt = "Behind the Scenes: " + filmsJson.films[i].title;
+        img.title = "Behind the Scenes"
 
         images.appendChild(img);
       }
