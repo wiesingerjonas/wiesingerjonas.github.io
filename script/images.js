@@ -17,6 +17,7 @@ window.addEventListener('load', () => {
     for (let i = amountImages; i >= 1; i--) {
         const img = document.createElement('img');
         img.setAttribute('src', `../media/photos/small/${i}.jpg`);
+        img.alt = "Photo by Jonas Wiesinger"
 
         if( !navigator.userAgent.match(/Android/i)
             && !navigator.userAgent.match(/webOS/i)
