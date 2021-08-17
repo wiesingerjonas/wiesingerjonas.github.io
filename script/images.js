@@ -1,4 +1,4 @@
-const amountImages = 43;
+const amountImages = 52;
 let scrollDistance;
 
 window.addEventListener('load', () => {
