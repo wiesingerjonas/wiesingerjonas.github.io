@@ -156,7 +156,13 @@ window.addEventListener('load', () => {
         '"iframeLink":"https://www.youtube.com/embed/TMyhcndmOko", ' +
         '"secondLink":"Making of - Studio Recording;https://youtu.be/oMFJ6-D15yQ", ' +
         '"text":"The upper-austrian media company true-studios was producing this video during my internship at their business. I shot a few pictures which got featured for like 2 seconds and I was involved in the postproduction process. Furthermore I have produced two making ofs for true-studios. One which documents the studio recording and one wich documents the whole process of produciton.", ' +
-        '"popularity":"17", "category":"musicvideo"}]}';
+        '"popularity":"17", "category":"musicvideo"},' +
+
+      '{"title":"Lost", "subtitle":"Medien Kultur Haus", "year":"2021", "amountImg":"0", ' +
+      '"iframeLink":"null", ' +
+      '"secondLink":"null", ' +
+      '"text":"null", ' +
+      '"popularity":"17", "category":"shortfilm"}]}';;
   //endregion
 
   const filmsJson = JSON.parse(films);
