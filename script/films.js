@@ -155,7 +155,10 @@ window.addEventListener('load', () => {
         '{"title":"Wels-Song", "subtitle":"true-studios", "year":"2021", "amountImg":"0", ' +
         '"iframeLink":"https://www.youtube.com/embed/TMyhcndmOko", ' +
         '"secondLink":"Making of - Studio Recording;https://youtu.be/oMFJ6-D15yQ", ' +
-        '"text":"The upper-austrian media company true-studios was producing this video during my internship at their business. I shot a few pictures which got featured for like 2 seconds and I was involved in the postproduction process. Furthermore I have produced two making ofs for true-studios. One which documents the studio recording and one wich documents the whole process of produciton.", ' +
+        '"text":"The upper-austrian media company true-studios was producing this video during my internship at their business. ' +
+        'I shot a few pictures which got featured for like 2 seconds and I was involved in the postproduction process. ' +
+        'Furthermore I have produced two making ofs for true-studios. ' +
+        'One which documents the studio recording and one wich documents the whole process of produciton.", ' +
         '"popularity":"17", "category":"musicvideo"},' +
 
         '{"title":"Lost", "subtitle":"Medien Kultur Haus", "year":"2021", "amountImg":"0", ' +
@@ -164,10 +167,12 @@ window.addEventListener('load', () => {
         '"text":"null", ' +
         '"popularity":"17", "category":"shortfilm"},' +
 
-        '{"title":"Kulturpolitik in Wels", "subtitle":"Studio 17", "year":"2021", "amountImg":"0", ' +
+        '{"title":"Kulturpolitik in Wels", "subtitle":"Studio 17", "year":"2021", "amountImg":"3", ' +
         '"iframeLink":"null", ' +
         '"secondLink":"null", ' +
-        '"text":"null", ' +
+        '"text":"Anlässlich der bevorstehenden Wahlen hat das Medien Kultur Haus den aktuellen Kulturstadtrat ' +
+        'und die Kultursprecher*innen der im Welser Gemeinderat vertretenen Parteien zu einer Podiumsdiskussion eingeladen, ' +
+        'um ihre Kompetenz, Positionen und Visionen vorzustellen.", ' +
         '"popularity":"17", "category":"livestream"}]}';
   //endregion
 
