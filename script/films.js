@@ -161,7 +161,7 @@ window.addEventListener('load', () => {
         'One which documents the studio recording and one wich documents the whole process of produciton.", ' +
         '"popularity":"17", "category":"musicvideo"},' +
 
-        '{"title":"Lost", "subtitle":"Medien Kultur Haus", "year":"2021", "amountImg":"0", ' +
+        '{"title":"Lost", "subtitle":"Medien Kultur Haus", "year":"2021", "amountImg":"6", ' +
         '"iframeLink":"null", ' +
         '"secondLink":"null", ' +
         '"text":"null", ' +
