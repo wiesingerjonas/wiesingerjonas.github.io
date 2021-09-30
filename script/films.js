@@ -170,9 +170,9 @@ window.addEventListener('load', () => {
         '{"title":"Kulturpolitik in Wels", "subtitle":"Studio 17", "year":"2021", "amountImg":"3", ' +
         '"iframeLink":"null", ' +
         '"secondLink":"null", ' +
-        '"text":"Anlässlich der bevorstehenden Wahlen hat das Medien Kultur Haus den aktuellen Kulturstadtrat ' +
-        'und die Kultursprecher*innen der im Welser Gemeinderat vertretenen Parteien zu einer Podiumsdiskussion eingeladen, ' +
-        'um ihre Kompetenz, Positionen und Visionen vorzustellen.", ' +
+        '"text":"On the occasion of the upcoming elections, the Medien Kultur Haus invited the current city councilor ' +
+        'for culture and the culture spokespersons for the parties represented in the Wels municipal council ' +
+        'to a panel discussion in order to present their skills, positions and visions.", ' +
         '"popularity":"17", "category":"livestream"}]}';
   //endregion
 
