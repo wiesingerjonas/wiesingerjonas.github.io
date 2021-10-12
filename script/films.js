@@ -167,7 +167,7 @@ window.addEventListener('load', () => {
         '"text":"The movie tells the story of the siblings Nina and Ben, who live together in an apartment in Wels. ' +
         'Ben is already grown up, but he doesn\'t have a job and after his girlfriend has left him, ' +
         'he spends the days in his room and doesn\'t even let his sister get close to him. When Nina comes back from shopping ' +
-        'one day, Ben has disappeared.", ' +
+        'one day, Ben has disappeared. The movie will premiere on the 16th november.", ' +
         '"popularity":"17", "category":"shortfilm"},' +
 
         '{"title":"Kulturpolitik in Wels", "subtitle":"Studio 17", "year":"2021", "amountImg":"3", ' +
