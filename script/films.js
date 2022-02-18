@@ -102,7 +102,12 @@ window.addEventListener('load', () => {
         //region subtitle
         if (filmsJson.films[i].subtitle !== 'null') {
           const subtitle = document.createElement('h2');
-          subtitle.textContent = filmsJson.films[i].subtitle;
+
+          if(filmsJson.films[i].role !== 'null') {
+            subtitle.textContent = filmsJson.films[i].subtitle + " | " + filmsJson.films[i].role;
+          } else {
+            subtitle.textContent = filmsJson.films[i].subtitle;
+          }
           informationText.appendChild(subtitle);
         }
         //endregion
