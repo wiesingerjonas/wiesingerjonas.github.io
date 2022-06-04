@@ -1,7 +1,7 @@
 const amountImages = 52;
 let scrollDistance;
 
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
     const imgContainer = document.getElementById('imgContainer');
 
     let fullScreenImgDisplay = document.getElementById('fullScreenImgDisplay')
@@ -99,3 +99,4 @@ window.addEventListener('load', () => {
         }
     }
 });
+*/
