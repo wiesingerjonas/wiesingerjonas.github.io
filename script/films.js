@@ -174,8 +174,8 @@ window.addEventListener('load', () => {
           const img = document.createElement('img');
 
           img.src = `../media/films/${posterSrc}_${j + 1}.jpg`;
-          img.alt = "Behind the Scenes: " + filmsJson.films[i].title;
-          img.title = "Behind the Scenes"
+          img.alt = "Jonas Wiesinger on the set of " + filmsJson.films[i].title;
+          img.title = "Jonas Wiesinger on the set of " + filmsJson.films[i].title;
 
           images.appendChild(img);
         }
